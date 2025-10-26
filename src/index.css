@@ -13,17 +13,17 @@
   --accent-color: #00080e;
 }
 
-/* ==== GLOBAL SCROLLBAR STYLE ==== */
+
 ::-webkit-scrollbar {
-  width: 10px; /* scrollbar width */
+  width: 10px; 
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a061f; /* background color of the track */
+  background: #0a061f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #221f4a, #080611); /* scrollbar thumb */
+  background: linear-gradient(180deg, #221f4a, #080611);
   border-radius: 10px;
 }
 

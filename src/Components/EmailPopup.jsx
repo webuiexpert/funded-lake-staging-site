@@ -24,38 +24,64 @@ function EmailPopup() {
     };
   }, [show]);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setMessage("");
-    const apiKey = import.meta.env.VITE_BREVO_API_KEY;
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   setMessage("");
+  //   const apiKey = import.meta.env.VITE_BREVO_API_KEY;
 
-    try {
-      await axios.post(
-        "https://api.brevo.com/v3/contacts",
-        {
-          email,
-          listIds: [5], // 👈 Replace with your actual list ID
-          updateEnabled: false,
-        },
-        {
-          headers: {
-            "api-key": apiKey,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+  //   try {
+  //     await axios.post(
+  //       "https://api.brevo.com/v3/contacts",
+  //       {
+  //         email,
+  //         listIds: [5], // 👈 Replace with your actual list ID
+  //         updateEnabled: false,
+  //       },
+  //       {
+  //         headers: {
+  //           "api-key": apiKey,
+  //           "Content-Type": "application/json",
+  //         },
+  //       }
+  //     );
 
-      // ✅ Clear input and show success message
+  //     // ✅ Clear input and show success message
+  //     setEmail("");
+  //     setMessage("🎉 Subscription successful! Check your inbox.");
+  //   } catch (error) {
+  //     setEmail("");
+  //     setMessage("❌ Error: " + (error.response?.data?.message || "Failed"));
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+  setMessage("");
+  // ❌ Remove this line: const apiKey = import.meta.env.VITE_BREVO_API_KEY;
+
+  try {
+    const response = await axios.post('/api/subscribe', {
+      email
+    });
+
+    if (response.data.success) {
       setEmail("");
       setMessage("🎉 Subscription successful! Check your inbox.");
-    } catch (error) {
+    } else {
       setEmail("");
-      setMessage("❌ Error: " + (error.response?.data?.message || "Failed"));
-    } finally {
-      setLoading(false);
+      setMessage("❌ Error: " + response.data.message);
     }
-  };
+  } catch (error) {
+    setEmail("");
+    setMessage("❌ Error: " + (error.response?.data?.message || "Failed to subscribe"));
+  } finally {
+    setLoading(false);
+  }
+};
 
   if (!show) return null;
 
