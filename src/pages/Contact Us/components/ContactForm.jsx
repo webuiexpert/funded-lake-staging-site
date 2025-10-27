@@ -2,7 +2,6 @@ import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
 import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
-import PrimaryButton from "../../../Components/PrimaryButton";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -128,9 +127,13 @@ function ContactForm() {
               />
             </div>
 
-            <button type="submit" value="Send" className="mt-5">
-              <PrimaryButton text="SUBMIT" />
-            </button>
+            <button
+              className="px-6 py-3 bg-secondory rounded-md text-black my-6 hover:scale-[0.8] duration-300 hover:bg-white bg-[#00c4f4] font-semibold cursor-pointer"
+              type="submit"
+              value="Send"
+            >
+              Send Message
+            </button>
             {message && (
               <p className="w-full text-center p-2 text-2xl font-semibold text-[#ffff]">
                 {message}
