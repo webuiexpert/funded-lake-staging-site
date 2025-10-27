@@ -27,65 +27,30 @@ function EmailPopup() {
    if (!show) return null;
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setMessage("");
-    const apiKey = import.meta.env.VITE_BREVO_API_KEY;
+  e.preventDefault();
+  setLoading(true);
+  setMessage("");
 
-    try {
-      await axios.post(
-        "https://api.brevo.com/v3/contacts",
-        {
-          email,
-          listIds: [5], // 👈 Replace with your actual list ID
-          updateEnabled: false,
-        },
-        {
-          headers: {
-            "api-key": apiKey,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+  try {
+    // Use your actual domain URL
+    const response = await axios.post('https://fundedlake.com/api/subscribe.php', {
+      email
+    });
 
-      // ✅ Clear input and show success message
+    if (response.data.success) {
       setEmail("");
       setMessage("🎉 Subscription successful! Check your inbox.");
-    } catch (error) {
+    } else {
       setEmail("");
-      setMessage("❌ Error: " + (error.response?.data?.message || "Failed"));
-    } finally {
-      setLoading(false);
+      setMessage("❌ Error: " + response.data.message);
     }
-  };
-
-// const handleSubmit = async (e) => {
-//   e.preventDefault();
-//   setLoading(true);
-//   setMessage("");
-//   // ❌ Remove this line: const apiKey = import.meta.env.VITE_BREVO_API_KEY;
-
-//   try {
-//     const response = await axios.post('/api/subscribe', {
-//       email
-//     });
-
-//     if (response.data.success) {
-//       setEmail("");
-//       setMessage("🎉 Subscription successful! Check your inbox.");
-//     } else {
-//       setEmail("");
-//       setMessage("❌ Error: " + response.data.message);
-//     }
-//   } catch (error) {
-//     setEmail("");
-//     setMessage("❌ Error: " + (error.response?.data?.message || "Failed to subscribe"));
-//   } finally {
-//     setLoading(false);
-//   }
-// };
-
- 
+  } catch (error) {
+    setEmail("");
+    setMessage("❌ Error: " + (error.response?.data?.message || "Failed to subscribe"));
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-20 z-[9999] flex items-center justify-center">
