@@ -15,7 +15,7 @@ function ContactForm() {
 
     emailjs
       .sendForm("service_9tlup5a", "template_6ym46re", form.current, {
-        publicKey: "", //iSAUlRGczFV4MCVV6
+        publicKey: "iSAUlRGczFV4MCVV6", //iSAUlRGczFV4MCVV6
       })
       .then(
         () => {
