@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu } from "lucide-react";

@@ -1,8 +1,5 @@
 import { NavLink } from "react-router-dom";
 import logo from "/assets/logo.webp";
-// import telegramIcon from "/assets/telegram-icon.png";
-// import twitterIcon from "/assets/twitter-icon.png";
-// import gitIcon from "/assets/git-icon.png";
 import checkIcon from "/assets/bullet-points.png";
 import { Facebook, Linkedin, Youtube, Instagram, Github, Send, X } from "lucide-react";
 import { FaDiscord } from "react-icons/fa";
@@ -30,48 +27,6 @@ function Footer() {
             >
               <img className="md:w-100" src={logo} alt="logo" />
             </NavLink>
-            {/* <ul className="social-icons duration-500 flex justify-center items-center gap-2 my-4">
-            
-              <a
-                href="https://www.facebook.com/profile.php?id=61575089499789"
-                target="_blank"
-              >
-                <li>
-                  <img src={telegramIcon} alt="" />
-                </li>
-              </a>
-               <a
-                href="https://www.facebook.com/profile.php?id=61575089499789"
-                target="_blank"
-              >
-                <li>
-                  <img src={twitterIcon} alt="" />
-                </li>
-              </a>
-              <a href="https://www.instagram.com/fundedlake/" target="_blank">
-                <li>
-                  <img src={gitIcon} alt="" />
-                </li>
-              </a>
-              <a
-                href="http://www.linkedin.com/in/funded-lake-686999359"
-                target="_blank"
-              >
-                <li>
-                  <img src={telegramIcon} alt="" />
-                </li>
-              </a>
-              <a href="https://www.youtube.com/@Fundedlake" target="_blank">
-                <li>
-                  <img src={twitterIcon} alt="" />
-                </li>
-              </a>
-              <a href="https://x.com/Fundedlake" target="_blank">
-                <li>
-                  <img src={gitIcon} alt="" />
-                </li>
-              </a>
-            </ul> */}
             <div className="flex gap-2 justify-center mt-6 ">
               {socialLinks.map((item, index) => (
                 <a
