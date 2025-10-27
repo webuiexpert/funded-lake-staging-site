@@ -24,6 +24,8 @@ function EmailPopup() {
     };
   }, [show]);
 
+   if (!show) return null;
+
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
   //   setLoading(true);
@@ -83,7 +85,7 @@ const handleSubmit = async (e) => {
   }
 };
 
-  if (!show) return null;
+ 
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-20 z-[9999] flex items-center justify-center">

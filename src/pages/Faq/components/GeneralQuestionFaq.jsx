@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-
 function GeneralQuestionFaq({ searchTerm }) {
   const faqs = [
     {
@@ -12,7 +11,10 @@ function GeneralQuestionFaq({ searchTerm }) {
             <li>Forex: 1 lot = $100k notional</li>
             <li>
               Index: 1 lot = 1 Contract
-              <p>Exceptions: SPX500: 1 lot = 10 contracts JPN225: 1 lot = 500 contracts</p>
+              <p>
+                Exceptions: SPX500: 1 lot = 10 contracts JPN225: 1 lot = 500
+                contracts
+              </p>
             </li>
             <li>Cryptos: 1 lot = 1 coin</li>
             <li>Silver: 1 lot = 5000 ounces</li>
@@ -78,9 +80,85 @@ function GeneralQuestionFaq({ searchTerm }) {
               any Trader from participating in the program for any reason, in
               the Company’s sole and absolute discretion. To view all Prohibited
               Uses, please review our Terms and Conditions here,{" "}
-              <a className="text-red-600" href="https://dashboardanalytix.com/client-terms-and-policies/?v=3acf83834396">
+              <a
+                className="text-red-600"
+                href="https://dashboardanalytix.com/client-terms-and-policies/?v=3acf83834396"
+              >
                 https://dashboardanalytix.com/client-terms-and-policies/?v=3acf83834396
               </a>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+
+    {
+      question:
+        "How many Assessments and/or Funded accounts may I have active at one time?",
+      answer: (
+        <div className="space-y-4 text-white text-[16px] leading-relaxed">
+          <p>
+            <strong>Evaluation Limits:</strong>
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+              You are allowed to take only one evaluation of a specific account
+              size and a specific plan tier at a time across all trading
+              platforms.
+            </li>
+            <li>
+              <strong>Example:</strong> You can have one 100k One Step Plan and
+              one 100k Two Step Plan active simultaneously. However, you cannot
+              have one 100k One Step Plan on DXTrade and another 100k One Step
+              Plan on cTrader, or 2+ 100k 1 Step plans on any combination of
+              platforms.{" "}
+            </li>
+          </ul>
+          <p>
+            <strong>Maximum Assessment Limits:</strong>
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+              A maximum of $1 million in active evaluation plans per person is
+              permitted. This can be composed of multiple assessments, provided
+              that none are the same account size and are within the same Step
+              framework as described above.{" "}
+            </li>
+          </ul>
+          <p>
+            <strong>Maximum Funded Limits:</strong>
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+              A maximum of $1 million in active funded plans per person is
+              permitted.
+            </li>
+            <li>
+              If a customer passes multiple assessments and has 2 active funded
+              accounts of the same account size, they will have 2 options:-
+            </li>
+          </ul>
+          <ol className="list-decimal list-inside pl-8">
+            <li>
+              Only have one funded account of that size open at a time and wait
+              for the account to be breached before making the other funded
+              account active.
+            </li>
+            <li>
+              If no trading has taken place in either account, the customer can
+              opt to combine the 2 accounts into a single account of double the
+              size.
+            </li>
+          </ol>
+          <p>
+            <strong>Compounding Limits:</strong>
+          </p>
+          <ul className="list-disc list-inside">
+            <li>There are no limits on compounding.</li>
+            <li>
+              You can start with up to $1 million of initial funding and grow
+              the account to any balance you desire, including $10 million, $20
+              million, and beyond.
             </li>
           </ul>
         </div>
@@ -187,7 +265,7 @@ function GeneralQuestionFaq({ searchTerm }) {
     },
   ];
 
-    const filteredFaqs = faqs.filter((faq) =>
+  const filteredFaqs = faqs.filter((faq) =>
     faq.question.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -198,16 +276,17 @@ function GeneralQuestionFaq({ searchTerm }) {
   };
 
   return (
-       <div className="faq-bg-col p-10 rounded-2xl mt-6 max-w-4xl mx-auto">
-       <motion.h3
-            className="md:leading-[1.1em] font-bold title-font mb-8 uppercase text-4xl text-white"
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-            viewport={{ once: true, amount: 0.4 }} //
-          >
-            <span className="text-[var(--primary-color)]">GENERAL </span> STEP QUESTIONS
-          </motion.h3>
+    <div className="faq-bg-col p-10 rounded-2xl mt-6 max-w-4xl mx-auto">
+      <motion.h3
+        className="md:leading-[1.1em] font-bold title-font mb-8 uppercase text-4xl text-white"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.4 }} //
+      >
+        <span className="text-[var(--primary-color)]">GENERAL </span> STEP
+        QUESTIONS
+      </motion.h3>
       <div className="space-y-4 ">
         {filteredFaqs.map((faq, index) => (
           <div className="bg-[#000b1f] p-4 rounded-2xl" key={index}>
@@ -215,7 +294,9 @@ function GeneralQuestionFaq({ searchTerm }) {
               onClick={() => toggle(index)}
               className="w-full cursor-pointer flex justify-between items-center text-left"
             >
-              <span className="text-white font-semibold text-[18px]">{faq.question}</span>
+              <span className="text-white font-semibold text-[18px]">
+                {faq.question}
+              </span>
             </button>
             {openIndex === index && (
               <div className="px-3 py-4 text-[16px] whitespace-pre-line text-gray-300">
