@@ -76,6 +76,7 @@ export default function StatsSection() {
                   end={stat.value}
                   duration={2}
                   suffix={stat.suffix}
+                  prefix={stat.label === "In payouts processed" ? "$ " : ""}
                   enableScrollSpy
                 />
               )}
