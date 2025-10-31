@@ -12,7 +12,7 @@ const stats = [
   },
   {
     label: "Countries",
-    value: 35,
+    value: 25,
     suffix: "+",
   },
   {
