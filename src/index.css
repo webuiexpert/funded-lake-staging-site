@@ -63,7 +63,7 @@
 html,
 body {
   font-family: var(--font-primary);
-  background-color: #01255f;
+  background-color: #060812;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
