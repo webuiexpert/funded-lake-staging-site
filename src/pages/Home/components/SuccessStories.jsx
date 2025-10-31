@@ -29,10 +29,10 @@ function SuccessStories() {
                 just two months, his persistence paid off — he became a
                 FundedLake trader and started earning real payouts.
               </p>
-              <h5 className="my-3 md:text-xl text-lg font-semibold">
+              <h5 className="my-3 md:text-xl text-lg font-semibold text-white">
                 In this exclusive 25-minute interview, he opens up about:
               </h5>
-              <ul className="space-y-2.5 mb-3">
+              <ul className="space-y-2.5 mb-3 text-white">
                 <li>🎯 His early struggles and lessons learned</li>
                 <li>🧠 The mindset shift that changed everything</li>
                 <li>📈 How he managed risk and stayed consistent</li>
@@ -44,7 +44,7 @@ function SuccessStories() {
                 This story is proof that with discipline and the right
                 environment, anyone can go from zero to funded.
               </p>
-              <h6 className="my-3 md:text-xl text-lg font-semibold p-0 mx-0">
+              <h6 className="my-3 md:text-xl text-lg font-semibold text-white p-0 mx-0">
                 🎥 Watch the full interview below:
               </h6>
               <a
@@ -84,10 +84,10 @@ function SuccessStories() {
                 just two months, his persistence paid off — he became a
                 FundedLake trader and started earning real payouts.
               </p>
-              <h5 className="my-3 md:text-xl text-lg font-semibold">
+              <h5 className="my-3 md:text-xl text-lg font-semibold text-white">
                 In this exclusive 25-minute interview, he opens up about:
               </h5>
-              <ul className="space-y-2.5 mb-3">
+              <ul className="space-y-2.5 mb-3 text-white">
                 <li>🎯 His early struggles and lessons learned</li>
                 <li>🧠 The mindset shift that changed everything</li>
                 <li>📈 How he managed risk and stayed consistent</li>
@@ -99,7 +99,7 @@ function SuccessStories() {
                 This story is proof that with discipline and the right
                 environment, anyone can go from zero to funded.
               </p>
-              <h6 className="my-3 md:text-xl text-lg font-semibold p-0 mx-0">
+              <h6 className="my-3 md:text-xl text-lg font-semibold text-white p-0 mx-0">
                 🎥 Watch the full interview below:
               </h6>
               <a
@@ -139,10 +139,10 @@ function SuccessStories() {
                 just two months, his persistence paid off — he became a
                 FundedLake trader and started earning real payouts.
               </p>
-              <h5 className="my-3 md:text-xl text-lg font-semibold">
+              <h5 className="my-3 md:text-xl text-lg font-semibold text-white">
                 In this exclusive 25-minute interview, he opens up about:
               </h5>
-              <ul className="space-y-2.5 mb-3">
+              <ul className="space-y-2.5 mb-3 text-white">
                 <li>🎯 His early struggles and lessons learned</li>
                 <li>🧠 The mindset shift that changed everything</li>
                 <li>📈 How he managed risk and stayed consistent</li>
@@ -154,7 +154,7 @@ function SuccessStories() {
                 This story is proof that with discipline and the right
                 environment, anyone can go from zero to funded.
               </p>
-              <h6 className="my-3 md:text-xl text-lg font-semibold p-0 mx-0">
+              <h6 className="my-3 md:text-xl text-lg font-semibold text-white p-0 mx-0">
                 🎥 Watch the full interview below:
               </h6>
               <a
