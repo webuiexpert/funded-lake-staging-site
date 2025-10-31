@@ -47,7 +47,7 @@ function SuccessStories() {
               <h6 className="my-3 md:text-xl text-lg font-semibold text-white p-0 mx-0">
                 🎥 Watch the full interview below:
               </h6>
-              <a
+              <a className="text-[#00c4f4] hover:text-white"
                 href="https://www.youtube.com/watch?v=l7qtPL6AIWk"
                 target="_blank"
               >
@@ -102,7 +102,7 @@ function SuccessStories() {
               <h6 className="my-3 md:text-xl text-lg font-semibold text-white p-0 mx-0">
                 🎥 Watch the full interview below:
               </h6>
-              <a
+              <a className="text-[#00c4f4] hover:text-white"
                 href="https://www.youtube.com/watch?v=l7qtPL6AIWk"
                 target="_blank"
               >
@@ -157,7 +157,7 @@ function SuccessStories() {
               <h6 className="my-3 md:text-xl text-lg font-semibold text-white p-0 mx-0">
                 🎥 Watch the full interview below:
               </h6>
-              <a
+              <a className="text-[#00c4f4] hover:text-white"
                 href="https://www.youtube.com/watch?v=l7qtPL6AIWk"
                 target="_blank"
               >
