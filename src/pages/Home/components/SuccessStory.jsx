@@ -1,6 +1,5 @@
 import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
-import certifiacteImg from "/assets/certificate-of-withdrawl18.jpg";
 import dollarCubeIcon from "/assets/bicon-icons-bg-left.png"
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png"
 import { motion } from "framer-motion";
