@@ -126,10 +126,10 @@ div#sib-container{
 
 /* success-story carousal */
 .slick-next {
-    right: -50px !important;
+    right: -25px !important;
 }
 .slick-prev {
-    left: -65px !important;
+    left: -45px !important;
 }
 .slick-prev:before, .slick-next:before {
     font-family: 'slick';

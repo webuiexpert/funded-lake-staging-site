@@ -18,7 +18,7 @@ function SuccessStories() {
     <div className="">
       <Slider {...settings}>
         <div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:mt-8 mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center md:mt-8 mt-4">
             <div className="order-2 md:order-1">
               <p className="text-gray-300 mb-4 md:text-[16px] text-sm">
                 Meet one of our traders who started with no prior trading
