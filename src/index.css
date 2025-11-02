@@ -130,6 +130,7 @@ span.swiper-pagination-bullet {
   height: 14px;
   width: 14px;
   border: 1px solid white;
+  visibility: hidden;
 }
 
 .swiper-button-prev{
@@ -737,4 +738,9 @@ span.swiper-pagination-bullet {
     .swiper-button-prev{
     display: none !important;
   }
+}
+@media (max-width: 520px) {
+ span.swiper-pagination-bullet {
+  visibility: visible;
+}
 }
