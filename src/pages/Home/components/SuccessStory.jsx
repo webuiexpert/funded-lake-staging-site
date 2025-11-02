@@ -20,7 +20,7 @@ function SuccessStory() {
             transition={{ duration: 1, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.4 }}
       >
-        <span className="text-white">trader's, </span>success story
+        <span className="text-white">trader's </span>success story
       </motion.h2>
 
      <SuccessStoriesSlider/>

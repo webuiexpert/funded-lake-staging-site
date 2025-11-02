@@ -26,7 +26,7 @@ function SuccessStoriesSlider() {
         <SwiperSlide>
           <div className="success-story rounded-4xl px-2 py-10 lg:px-20 md:px-12 shadow-lg">
             <h5 className="text-center md:text-2xl text-lg lg:text-3xl font-bold text-white mb-6">
-              🏆 Trader Success Story: From Zero to Funded
+               Trader's Success Story: From Zero to Funded
             </h5>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
