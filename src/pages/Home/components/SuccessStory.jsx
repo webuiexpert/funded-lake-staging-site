@@ -22,10 +22,8 @@ function SuccessStory() {
         <span className="text-white">trader's, </span>success story
       </motion.h2>
      
-      <div className="success-story lg:mt-16 md:mt-12 mt-6 lg:mb-24 md:mb-16 mb-10 rounded-4xl relative md:text-left text-center md:max-w-7xl mx-auto md:px-8 md:py-8 px-3 py-5 lg:p-12 shadow-lg">
-         <h5 className="md:text-2xl text-xl lg:text-3xl font-bold text-white mb-4 w-full text-center">
-              🏆 Trader Success Story: From Zero to Funded
-            </h5>
+      <div className="success-story lg:mt-16 md:mt-12 mt-6 lg:mb-24 md:mb-16 mb-10 rounded-4xl relative md:text-left text-center md:max-w-7xl mx-auto md:px-8 md:py-8 px-3 py-10 lg:p-12 shadow-lg">
+        
               <SuccessStories />
        
       </div>

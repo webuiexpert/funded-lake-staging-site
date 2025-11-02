@@ -17,7 +17,10 @@ function SuccessStories() {
   return (
     <div className="">
       <Slider {...settings}>
-        <div>
+        <div className="px-10">
+           <h5 className="md:text-2xl text-lg lg:text-3xl font-bold text-white md:mb-4 mb-7 text-center">
+              🏆 Trader Success Story: From Zero to Funded
+            </h5>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center md:mt-8 mt-4">
             <div className="order-2 md:order-1">
               <p className="text-gray-300 mb-4 md:text-[16px] text-sm">
@@ -72,7 +75,10 @@ function SuccessStories() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="px-10">
+           <h5 className="md:text-2xl text-lg lg:text-3xl font-bold text-white md:mb-4 mb-7  w-full text-center">
+              Trader's Success Story : From $225 to $3226
+            </h5>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center md:mt-8 mt-4">
             <div class="order-2 md:order-1"><p class="text-gray-300 mb-4 md:text-lg text-sm"><span class="font-semibold text-[var(--primary-color)]">Arjun Mehta </span>from India turned a $50,000 FundedLake 2-Step account purchased for just $225 into a life changing payout in just 8 days. What started as a simple challenge quickly transformed into a powerful reality: financial freedom, flexibility, and proof that with discipline and strategy, anything is possible.</p><p class="text-gray-300 md:text-lg text-sm">At FundedLake, stories like this are not rare, they are becoming the norm. Every payout is not just a withdrawal, it is a dream funded, a goal achieved, and a trader stepping into a whole new chapter of their life.</p></div>
             <div className="flex justify-center order-1 md:order-2">
