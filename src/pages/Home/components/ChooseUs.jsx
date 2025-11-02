@@ -76,7 +76,7 @@ function ChooseUs() {
         transition={{ duration: 1, ease: "easeInOut" }}
         viewport={{ once: true, amount: 0.4 }} // 
       >Why Choose Us</motion.h2>
-      <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl p-10 md:mt-12 mt-8">
+      <div className="choose-box max-w-6xl mx-auto border-2 border-[#21234b] rounded-2xl md:p-10 p-4 md:mt-12 mt-8">
         <motion.div
           variants={container}
           className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4 text-center">
