@@ -4,6 +4,7 @@ import dollarCubeIcon from "/assets/bicon-icons-bg-left.png"
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png"
 import { motion } from "framer-motion";
 import SuccessStories from "./SuccessStories";
+import SuccessStoriesSlider from "./SuccessStoriesSlider";
 
 
 function SuccessStory() {
@@ -22,13 +23,7 @@ function SuccessStory() {
         <span className="text-white">trader's, </span>success story
       </motion.h2>
 
-       <SuccessStories />
-     
-      {/* <div className=" lg:mt-16 md:mt-12 mt-6 lg:mb-24 md:mb-16 mb-10 relative md:text-left text-center md:max-w-7xl mx-auto md:px-8 md:py-8 px-3 py-10 lg:p-12 shadow-lg">
-        
-             
-       
-      </div> */}
+     <SuccessStoriesSlider/>
     </div>
   );
 }

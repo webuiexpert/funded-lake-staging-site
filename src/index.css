@@ -125,19 +125,30 @@ div#sib-container{
 }
 
 /* success-story carousal */
-.slick-next {
-    right: -10px !important;
-    z-index: 111 !important;
+
+span.swiper-pagination-bullet {
+  height: 14px;
+  width: 14px;
+  border: 1px solid white;
 }
-.slick-prev {
-    left: -35px !important;
-    z-index: 111 !important;
+
+.swiper-button-prev{
+  border: 1px solid #ffffff22;
+  border-radius: 40rem;
+  padding: 8px;
+  font-weight: 600;
+  background-color: #00c3f44a;
+  left: 18px !important;
+
 }
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 42px !important;
-    opacity: .2 !important;
-    
+.swiper-button-next{
+  border: 1px solid #ffffff22;
+  border-radius: 40rem;
+  padding: 8px;
+  font-weight: 600;
+  background-color: #00c3f44a;
+  right: 18px !important;
+
 }
 
 /* tab style */
@@ -663,58 +674,15 @@ div#sib-container{
 }
 }
 
-@media (min-width: 1025px) and (max-width: 1180px) {
-
-  .choose-box .features-col::before {
-    display: none;
-  }
-    /* success-story carousal */
-.slick-next {
-    right: 45px !important;    
-}
-.slick-prev {
-    left: 20px !important;
-}
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 36px !important;
-}
-  
-
-}
 @media (min-width: 901px) and (max-width: 1024px) {
 
     .choose-box .features-col::before {
     display: none;
   }
-    /* success-story carousal */
-.slick-next {
-    right: 45px !important;    
-}
-.slick-prev {
-    left: 0px !important;
-}
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 36px !important;
-}
-  
 
 }
 @media (min-width: 521px) and (max-width: 900px) {
 
-  /* success-story carousal */
-.slick-next {
-    right: 15px !important;    
-}
-.slick-prev {
-    left: 0px !important;
-}
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 36px !important;
-   
-}
   h1 {
     font-size: 2.375rem;
     font-weight: 900;
@@ -758,5 +726,15 @@ div#sib-container{
   .priceTabUl {
     width: fit-content;
     gap: 20px;
+  }
+
+}
+
+@media (min-width: 321px) and (max-width: 1024px) {
+  .swiper-button-next{
+    display: none !important;
+  }
+    .swiper-button-prev{
+    display: none !important;
   }
 }
