@@ -23,7 +23,7 @@ function ShowingTransparency() {
         alt=""
       />
       <img className="saperator w-full" src={botSep} alt="" />
-      <div className="md:py-10 py-10 lg:px-0 md:px-5 px-4 max-w-6xl mx-auto relative z-20">
+      <div className="md:py-10 py-10 lg:px-0 md:px-5 px-4 max-w-7xl mx-auto relative z-20">
         <h2 className="text-center">
           <span className="text-white ">Meeting traders. Sharing stories.</span>{" "}
           Showing transparency.

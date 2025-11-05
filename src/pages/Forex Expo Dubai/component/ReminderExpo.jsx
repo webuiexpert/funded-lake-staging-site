@@ -22,9 +22,9 @@ function ReminderExpo() {
         alt=""
       />
       <img className="saperator w-full" src={botSep} alt="" />
-      <div className="md:py-10 py-10 lg:px-0 md:px-5 px-4 max-w-6xl mx-auto relative z-20">
+      <div className="md:py-10 py-10 lg:px-0 md:px-5 px-4 max-w-7xl mx-auto relative z-20">
         <h2 className="text-center">
-          <span className="text-white ">This was more than an expo</span>It was a reminder of why we started.
+          <span className="text-white block">This was more than an expo</span> It was a reminder of why we started.
         </h2>
         <p className="max-w-5xl mx-auto text-white md:text-xl text-lg text-center my-5">
         The conversations we had, the stories we heard, and the energy from traders reminded us why FundedLake exists. <br /> We left Dubai more motivated than ever to keep improving funding opportunities, scaling options, and payout systems for traders around the world.</p>

@@ -20,7 +20,7 @@ function CommunityTransparency() {
         src={coineCubeIcon}
         alt=""
       />
-      <div className="md:py-16 py-10 lg:px-0 md:px-5 px-4 max-w-6xl mx-auto relative z-20">
+      <div className="md:py-16 py-10 lg:px-0 md:px-5 px-4 max-w-7xl mx-auto relative z-20">
         <h2 className="text-center">
           <span className="text-white ">Transparency. Payouts.</span>Community.
         </h2>
