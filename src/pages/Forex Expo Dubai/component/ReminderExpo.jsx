@@ -6,6 +6,9 @@ import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
 import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
+import { motion } from "framer-motion";
+
+
 function ReminderExpo() {
   return (
     <div className="relative">
@@ -23,9 +26,14 @@ function ReminderExpo() {
       />
       <img className="saperator w-full" src={botSep} alt="" />
       <div className="md:py-10 py-10 lg:px-0 md:px-5 px-4 max-w-7xl mx-auto relative z-20">
-        <h2 className="text-center">
+        <motion.h2
+        initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1.1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.4 }}
+        className="text-center">
           <span className="text-white block">This was more than an expo</span> It was a reminder of why we started.
-        </h2>
+        </motion.h2>
         <p className="max-w-5xl mx-auto text-white md:text-xl text-lg text-center my-5">
         The conversations we had, the stories we heard, and the energy from traders reminded us why FundedLake exists. <br /> We left Dubai more motivated than ever to keep improving funding opportunities, scaling options, and payout systems for traders around the world.</p>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-10 mb-12">
