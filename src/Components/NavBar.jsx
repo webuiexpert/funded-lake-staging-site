@@ -30,7 +30,7 @@ const Navbar = () => {
             { to: "/who-we-are", label: "WHO WE ARE" },
             { to: "/faqs", label: "FAQS" },
             { to: "/contact-us", label: "CONTACT US" },
-            // { to: "#", label: "FOREX EXPO DUBAI" },
+            { to: "forex-expo-dubai", label: "FOREX EXPO DUBAI" },
           ].map(({ to, label }) => (
             <NavLink
               key={to}

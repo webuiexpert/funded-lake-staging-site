@@ -8,7 +8,7 @@ function TopBar() {
   if (!visible) return null;
 
   return (
-    <div className="relative w-full bg-[var(--primary-color)] flex flex-col justify-center items-center gap-y-2 pt-[2px] px-4 md:px-6">
+    <div className="relative z-70 w-full bg-[var(--primary-color)] flex flex-col justify-center items-center gap-y-2 pt-[2px] px-4 md:px-6">
       <X
         onClick={() => setVisible(false)}
         className="text-white size-6 md:size-7 absolute md:top-4 border rounded-full p-1 top-1 right-1 md:right-24 cursor-pointer"

@@ -26,7 +26,7 @@ function App() {
             <Route path="/who-we-are" element={<WhoWeAre />} />
             <Route path="/faqs" element={<Faq />} />
             <Route path="/contact-us" element={<ContactUS />} />
-            <Route path="/forex-expo" element={<ForexExpro />} />
+            <Route path="/forex-expo-dubai" element={<ForexExpro />} />
           </Routes>
         </div>
         <Footer />

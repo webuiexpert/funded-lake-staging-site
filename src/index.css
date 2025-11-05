@@ -628,6 +628,12 @@ span.swiper-pagination-bullet {
   background-size: cover;
 }
 
+/* forex style css */
+
+.forex-vdo {
+    box-shadow: 0px 0 21px 5px #010b45;
+}
+
 
 
 /* -----------media screen-------- */
