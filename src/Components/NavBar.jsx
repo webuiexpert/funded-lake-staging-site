@@ -113,7 +113,7 @@ const Navbar = () => {
             CONTACT US
           </NavLink>
           <NavLink
-            to="/forex-expo"
+            to="/forex-expo-dubai"
             className={({ isActive }) =>
               `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
                 isActive ? "bg-primary text-white" : "text-white"
