@@ -12,7 +12,7 @@ function FundedlakeExperience() {
                     <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/l7qtPL6AIWk?si=0U4XLJwO_WrPvxDS"
+                    src="https://www.youtube.com/embed/SvyS9jZ74RI?si=TEW0FtenCbZ1fgTv"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

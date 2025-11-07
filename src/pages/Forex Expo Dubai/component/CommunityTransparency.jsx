@@ -53,7 +53,7 @@ function CommunityTransparency() {
               <span class="dot_3 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[10px] z-[1]  group-hover:border-white top-5 right-5 rounded-full"></span>
               <span class="dot_4 absolute bg-[#2f336dcc] group-hover:bg-[#4750c8] group-hover:scale-110 scale-100 duration-700 size-[10px] z-[1]  group-hover:border-white bottom-5 right-5 rounded-full"></span>
               <img
-                className="w-full object-cover h-full border-2 border-white"
+                className="w-full h-full border-2 border-white"
                 src={CommunityTransparencyImg2}
                 alt=""
               />
