@@ -60,9 +60,13 @@ const Navbar = () => {
             BtnText="Dashboard"
             BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in"
           />
-          <SecondaryButton
-            BtnText="GET FUNDED"
+          <div className="hidden"><SecondaryButton
+            BtnText="GET FUNDED NOW"
             BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
+          /></div>
+          <SecondaryButton
+            BtnText="SIGNUP"
+            BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-up"
           />
         </div>
 
@@ -115,7 +119,7 @@ const Navbar = () => {
           <NavLink
             to="/forex-expo-dubai"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
+              `px-[15px] py-0 hover:text-white font-semibold hover:bg-primary duration-300 ${
                 isActive ? "bg-primary text-white" : "text-white"
               }`
             }
@@ -128,9 +132,10 @@ const Navbar = () => {
               BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in"
             />
             <SecondaryButton
-              BtnText="GET FUNDED"
+              BtnText="GET FUNDED NOW"
               BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
             />
+            
           </div>
         </div>
       )}

@@ -18,7 +18,7 @@ function SecondaryButton({BtnText, BtnLink}) {
 
 const StyledWrapper = styled.div`
   .Btn {
-    width: 140px;
+    min-width: fit-content;
     height: 40px;
     border: 1px solid #0047bc;
     border-radius: 8px;
@@ -41,6 +41,7 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     transition-duration: 1s;
     overflow: hidden;
+    padding: 18px 20px;
   }
 
   .Btn::before {
