@@ -13,8 +13,7 @@ import TopBar from "./Components/TopBar";
 
 function App() {
   return (
-    <Router>
-      
+    <Router>      
       <CustomCursor />
       <EmailPopup />
       <div className="bg-[#06080e]">

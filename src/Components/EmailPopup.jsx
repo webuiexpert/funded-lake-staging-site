@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import popupImg100 from "/assets/popupImg-100k.png";
 import PrimaryButton from "./PrimaryButton";
+import CopyCouponButton from "./CopyCouponButton";
 import axios from "axios";
 
 function EmailPopup() {
@@ -24,33 +25,33 @@ function EmailPopup() {
     };
   }, [show]);
 
-   if (!show) return null;
+  if (!show) return null;
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setLoading(true);
-  setMessage("");
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
 
-  try {
-    // Use your actual domain URL
-    const response = await axios.post('https://fundedlake.com/api/subscribe.php', {
-      email
-    });
+    try {
+      // Use your actual domain URL
+      const response = await axios.post('https://fundedlake.com/api/subscribe.php', {
+        email
+      });
 
-    if (response.data.success) {
+      if (response.data.success) {
+        setEmail("");
+        setMessage("🎉 Subscription successful! Check your inbox.");
+      } else {
+        setEmail("");
+        setMessage("❌ Error: " + response.data.message);
+      }
+    } catch (error) {
       setEmail("");
-      setMessage("🎉 Subscription successful! Check your inbox.");
-    } else {
-      setEmail("");
-      setMessage("❌ Error: " + response.data.message);
+      setMessage("❌ Error: " + (error.response?.data?.message || "Failed to subscribe"));
+    } finally {
+      setLoading(false);
     }
-  } catch (error) {
-    setEmail("");
-    setMessage("❌ Error: " + (error.response?.data?.message || "Failed to subscribe"));
-  } finally {
-    setLoading(false);
-  }
-};
+  };
 
   return (
     <div className="fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center">
@@ -105,15 +106,20 @@ function EmailPopup() {
             )}
 
             {/* ✅ Action Buttons */}
-            <div className="contact-btns md:gap-5 gap-4 flex flex-col justify-start md:items-start lg:mt-4 mt-2">
+            <div className="contact-btns md:gap-5 gap-4 flex flex-col justify-start md:items-start lg:mt-0 mt-2">
               <PrimaryButton
                 text="JOIN OUR DISCORD"
                 link="https://discord.gg/vDSnjmxndy"
               />
-              <PrimaryButton
-                text="SIGNUP NOW"
-                link="https://fundedlakedashboard.propaccount.com/en/sign-up"
-              />
+              <div className="flex items-start gap-4 text-white text-center  flex-col relative">
+                 <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none">
+          BLACK FRIDAY 30% OFF ANY PROGRAM Code: BF30 
+        </p>
+                <div onClick={() => navigator.clipboard.writeText("BF30"
+                )}>
+                   <CopyCouponButton couponCode="BF30" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

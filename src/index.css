@@ -87,6 +87,9 @@ h4 {
   color: var(--primary-color);
   text-transform: uppercase;
 }
+#tidio-chat{
+    bottom: 26px !important;
+}
 
 .email-popup-col{
   background-image: url("../public/assets/blue-bg-light.png");
