@@ -81,7 +81,7 @@ function Footer() {
         <div>
           <div className="md:text-start text-center">
             <h5 className="font-bold text-white md:text-2xl text-xl my-2 uppercase">
-              terms
+              goal
             </h5>
             <ul className="md:block flex gap-4 justify-center items-center md:text-base text-[14px]">
              
