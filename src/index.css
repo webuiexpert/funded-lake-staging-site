@@ -753,3 +753,29 @@ span.swiper-pagination-bullet {
   visibility: visible;
 }
 }
+
+.founders-gradient-border {
+    background: linear-gradient(
+        135deg, 
+        #c745f7, 
+        #0685d3, 
+        #9adef3, 
+        #a3dff4
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.founders-gradient-border img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #ffffff; /* optional white background inside */
+}
+.founder-img{
+     background-repeat: no-repeat;
+    background-position: 40% 14%;
+    background-size: 300px;
+}

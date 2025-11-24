@@ -5,6 +5,7 @@ import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 import topSep from "/assets/top-saprator.jpg";
 import botSep from "/assets/bot-saprator.jpg";
 import { motion } from "framer-motion";
+import FoundersSection from "./FoundersSection";
 
 function WhoWeSection() {
   return (
@@ -98,6 +99,7 @@ function WhoWeSection() {
         </div>
         <img className="saperator w-full" src={botSep} alt="" />
       </div>
+      <FoundersSection />
     </div>
   );
 }
