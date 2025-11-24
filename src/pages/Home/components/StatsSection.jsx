@@ -7,7 +7,7 @@ import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 const stats = [
   {
     label: "Active Traders",
-    value: 500,
+    value: 700,
     suffix: "+",
   },
   {
@@ -17,7 +17,7 @@ const stats = [
   },
   {
     label: "In payouts processed",
-    value: 80,
+    value: 90,
     suffix: "K+",
   },
 ];
