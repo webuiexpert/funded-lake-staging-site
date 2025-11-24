@@ -119,7 +119,7 @@ function FoundersSection() {
                 </motion.div>
             </div>
 
-            <img src={botSep} alt="" className="mx-auto mt-10" />
+            <img src={botSep} alt="" className="mx-auto" />
         </div>
     );
 }
