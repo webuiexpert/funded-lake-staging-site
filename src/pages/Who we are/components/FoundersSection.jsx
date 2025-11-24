@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import chrisImg from "/assets/founders-imgs/chris-image.png"
 import makImg from "/assets/founders-imgs/mak-image.png"
 import marounImg from "/assets/founders-imgs/maroun-image.png"
+import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
+import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 import { useState } from "react";
 
 function FoundersSection() {
@@ -45,7 +47,19 @@ function FoundersSection() {
     ];
 
     return (
-        <div className='md:pt-4 md:pb-14 md:py-0 py-10'>
+        <div className='md:pt-14 md:pb-0 md:py-0 py-10 relative'>
+            <div className="navy-left-side-gradient d-block"></div>
+                  <div className="navy-right-side-gradient d-block"></div>
+                  <img
+                    className="scale-plus-animation absolute top-28 left-10 w-56 rotate-28"
+                    src={dollarCubeIcon}
+                    alt=""
+                  />
+                  <img
+                    className="scale-plus-animation absolute bottom-1/2 right-20 w-56 -rotate-32"
+                    src={coineCubeIcon}
+                    alt=""
+                  />
             <motion.h2
                 className="text-center mt-2"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -119,7 +133,7 @@ function FoundersSection() {
                 </motion.div>
             </div>
 
-            <img src={botSep} alt="" className="mx-auto" />
+            <img src={botSep} alt="" className="mx-auto lg:mt-28 md:mt-20 mt-16" />
         </div>
     );
 }

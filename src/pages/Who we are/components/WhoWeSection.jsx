@@ -84,7 +84,7 @@ function WhoWeSection() {
           >
             <span className="text-white">FUNDEDLAKE</span> MISSION
           </motion.h2>
-          <div className="mission-col max-w-6xl mx-auto px-10 lg:py-24 md:py-16 py-10 mt-10 text-center rounded-2xl">
+          <div className="mission-col max-w-6xl mx-auto px-10 lg:py-24 md:py-16 py-10 mt-10 text-center rounded-2xl relative z-30">
             <p className="text-white md:text-xl text-base md:max-w-[80%] mx-auto w-full">
               We’re here to revolutionize prop trading by offering traders a
               fair, transparent, and profitable opportunity to scale their
