@@ -54,8 +54,12 @@ function EmailPopup() {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center">
-      <div className="email-popup-col relative bg-white text-white w-full overflow-y-auto lg:max-w-4xl px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+    <div className="fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center"
+    onClick={() => setShow(null)}
+>
+      <div className="email-popup-col relative bg-white text-white w-full overflow-y-auto lg:max-w-4xl px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800"
+      onClick={(e) => e.stopPropagation()}
+>
         {/* ❌ Close Button */}
         <button
           className="absolute top-3 right-3 text-white text-4xl font-bold cursor-pointer"

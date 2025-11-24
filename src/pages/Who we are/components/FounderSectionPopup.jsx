@@ -125,12 +125,15 @@ function FounderSectionPopup() {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50"
+                            onClick={() => setSelectedFounder(null)}
                         >
                             <motion.div
                                 initial={{ scale: 0.8, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
                                 transition={{ duration: 0.3 }}
                                 className="bg-[#0f1021] border h-[520px] overflow-y-auto max-w-lg w-full p-6 rounded-xl shadow-xl text-white relative"
+                                onClick={(e) => e.stopPropagation()}
+
                             >
                                 <button
                                     onClick={() => setSelectedFounder(null)}
