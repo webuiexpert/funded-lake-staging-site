@@ -7,9 +7,10 @@ import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 import { useState } from "react";
 
-function FoundersSection() {
 
-    const [expandedIndex, setExpandedIndex] = useState(null);
+function FounderSectionPopup() {
+
+    const [selectedFounder, setSelectedFounder] = useState(null);
 
 
     const container = {
@@ -51,6 +52,7 @@ function FoundersSection() {
         <div className='md:pt-14 md:pb-0 md:py-0 py-10 relative'>
             <div className="navy-left-side-gradient d-block"></div>
             <div className="navy-right-side-gradient d-block"></div>
+
             <img
                 className="scale-plus-animation absolute top-28 left-10 w-56 rotate-28"
                 src={dollarCubeIcon}
@@ -61,6 +63,7 @@ function FoundersSection() {
                 src={coineCubeIcon}
                 alt=""
             />
+
             <motion.h2
                 className="text-center mt-2"
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -70,81 +73,100 @@ function FoundersSection() {
             >
                 <span className="text-white">Meet the </span> Founders
             </motion.h2>
+
             <div className="founders-box md:max-w-6xl mx-auto md:mt-10 md:mb-16 mt-10 lg:px-0 px-4">
                 <motion.div
                     variants={container}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="grid md:grid-cols-3 lg:gap-8 md:gap-4 gap-y-8 text-center">
-                    {foundersData.map((itemData, index) => {
-                        const isOpen = expandedIndex === index;
+                    className="grid md:grid-cols-3 lg:gap-8 md:gap-4 gap-y-8 text-center"
+                >
+                    {foundersData.map((itemData, index) => (
+                        <motion.div
+                            variants={item}
+                            key={index}
+                            className="founders-col flex flex-col items-center justify-start space-y-4 bg-[#0f1021] p-8 rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
+                        >
+                            <div className="founders-gradient-border overflow-hidden p-[5px] lg:size-[210px] md:size-[180px] size-[170px] rounded-full">
+                                <span
+                                    className="founder-img w-full h-full rounded-full"
+                                    style={{ backgroundImage: `url(${itemData.image})` }}
+                                ></span>
+                            </div>
 
-                        return (
+                            <div className="space-y-4 mt-4 text-center">
+                                <h5 className="lg:text-[28px] md:text-2xl text-xl uppercase font-semibold text-white">
+                                    {itemData.title}
+                                </h5>
+
+                                <p className="text-sm text-gray-400 uppercase">
+                                    {itemData.subtitle}
+                                </p>
+
+                                <p className="text-gray-300 mt-3">
+                                    {itemData.description.slice(0, 100)}…
+                                </p>
+
+                                <button
+                                    onClick={() => setSelectedFounder(itemData)}
+                                    className="text-blue-400 font-medium mt-2 hover:underline cursor-pointer"
+                                >
+                                    Read More
+                                </button>
+                            </div>
+                        </motion.div>
+                    ))}
+
+                    {/* 🔥 POPUP MODAL (Corrected) */}
+                    {selectedFounder && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50"
+                        >
                             <motion.div
-                                variants={item}
-                                key={index}
-                                className="works-col flex flex-col items-center justify-start space-y-4 bg-[#0f1021] p-8 rounded-xl hover:scale-105 duration-200 relative radial-bg shadow-xl"
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                transition={{ duration: 0.3 }}
+                                className="bg-[#0f1021] border h-[520px] overflow-y-auto max-w-lg w-full p-6 rounded-xl shadow-xl text-white relative"
                             >
-                                {/* Image */}
-                                <div className="founders-gradient-border overflow-hidden p-[5px] lg:size-[210px] md:size-[180px] size-[170px] rounded-full">
-                                    <span
-                                        className="founder-img w-full h-full rounded-full"
-                                        style={{ backgroundImage: `url(${itemData.image})` }}
-                                    ></span>
-                                </div>
+                                <button
+                                    onClick={() => setSelectedFounder(null)}
+                                    className="absolute top-3 right-3 text-white text-xl cursor-pointer"
+                                >
+                                    ✕
+                                </button>
 
-                                <div className="space-y-4 mt-4 text-center">
-                                    <h5 className="lg:text-[28px] md:text-2xl text-lg uppercase font-semibold text-white">
-                                        {itemData.title}
-                                    </h5>
+                                {/* <div className="founders-gradient-border overflow-hidden mx-auto p-[5px]  md:size-[180px] size-[170px] rounded-full mb-4">
+                            <span
+                                className="founder-img w-full h-full rounded-full"
+                                style={{ backgroundImage: `url(${selectedFounder.image})` }}
+                            ></span>
+                        </div> */}
 
-                                    <p className="text-sm text-gray-400 uppercase">
-                                        {itemData.subtitle}
-                                    </p>
+                                <h5 className="md:text-2xl text-lg uppercase font-semibold text-white text-center">
+                                    {selectedFounder.title}
+                                </h5>
 
-                                    {/* Description with smooth animation */}
-                                     <motion.p
-                                        initial={{ height: 0, opacity: 0 }}
-                                        animate={{
-                                            height: isOpen ? "auto" : 66,
-                                            opacity: 1
-                                        }}
-                                        transition={{ duration: 0.4, ease: "easeOut" }}
-                                        className="text-gray-300 overflow-hidden"
-                                    >
-                                        {itemData.description}
-                                    </motion.p>
+                                <p className="text-sm text-gray-400 uppercase text-center mb-3">
+                                    {selectedFounder.subtitle}
+                                </p>
 
-                                    {/* Toggle Button */}
-                                    <button
-                                        onClick={() =>
-                                            setExpandedIndex(isOpen ? null : index)
-                                        }
-                                        className="text-blue-400 font-medium mt-2 hover:underline cursor-pointer"
-                                    >
-                                        {isOpen ? "Read Less" : "Read More..."}
-                                    </button>
-
-                                    {/* Open Popup Button */}
-                                    <button
-                                        onClick={() => setSelectedFounder(itemData)}
-                                        className="text-blue-400 font-medium mt-2 hover:underline"
-                                    >
-                                        Read More
-                                    </button>
-                                </div>
+                                <p className="text-gray-300 leading-relaxed text-center">
+                                    {selectedFounder.description}
+                                </p>
                             </motion.div>
-                        );
-                    })}
-
-
+                        </motion.div>
+                    )}
                 </motion.div>
             </div>
 
             <img src={botSep} alt="" className="mx-auto lg:mt-28 md:mt-20 mt-16" />
         </div>
-    );
+
+    )
 }
 
-export default FoundersSection;
+export default FounderSectionPopup
