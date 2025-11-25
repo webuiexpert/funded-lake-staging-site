@@ -30,7 +30,7 @@ function FoundersSection() {
         {
             image: chrisImg,
             title: "Chris Mogab",
-            subtitle: "Co Founder and CEO, FundedLake",
+            subtitle: "Co Founder and CEO",
             description: "Chris is a professional trader and entrepreneur with over seven years of hands on experience in the trading and prop firm industry. His journey began as a retail trader facing the same challenges most traders deal with today, which gave him a deep understanding of risk management, psychology, and the consistency required to perform in high pressure market conditions.After working with multiple prop firms and funding setups, Chris identified a clear gap in transparency and trader support. That became the foundation for FundedLake. His vision is to build a firm that truly puts traders first, with clear rules, fast payouts, and a model built around real performance instead of unrealistic traps.Chris is actively involved in the day to day growth of FundedLake, from strategy and partnerships to community engagement and product development, making sure the brand always stays aligned with its core purpose, creating real opportunities for serious traders.",
         },
         {
@@ -42,7 +42,7 @@ function FoundersSection() {
         {
             image: marounImg,
             title: "Maroun Rajeh",
-            subtitle: "Co-Founder and Growth Lead",
+            subtitle: "Co-Founder & Growth Lead",
             description: "As a co founder of FundedLake, Maroun focuses on scaling the brand, shaping the vision, and strengthening the relationship between the company and its global trading community. With a background in engineering, marketing, community building, and trader engagement, he bridges strategy with execution to drive FundedLake’s growth across social platforms, partnerships, and user experience. Maroun is known for turning ideas into momentum, building systems, creating content direction, and ensuring the message behind FundedLake stays authentic, clear, and aligned with what traders truly need. His approach blends creativity with discipline, aiming to build a prop firm that grows through transparency, consistency, and a real human connection. At FundedLake, Maroun leads growth strategy, marketing operations, and community development, making sure the company stays true to its mission of empowering traders and building a brand people genuinely trust.",
         }
     ];
