@@ -22,13 +22,16 @@ import img21 from '/assets/certificate-of-withdrawl21.jpg';
 import img22 from '/assets/certificate-of-withdrawl22.jpg'; 
 import img23 from '/assets/certificate-of-withdrawl23.jpg'; 
 import img24 from '/assets/certificate-of-withdrawl24.jpg';  
+import img25 from '/assets/certificate-of-withdrawl25.jpg'; 
+import img26 from '/assets/certificate-of-withdrawl26.jpg'; 
+import img27 from '/assets/certificate-of-withdrawl27.jpg';  
 import topSep from "/assets/top-saprator.jpg";
 import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 
 const CertificateMarqueeSlider = () => {
   // Latest images first
-  const images = [img21, img22, img23, img24, img20, img19, img18, img17, img16, img15, img14, img13, img12, img11, img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
+  const images = [img27, img26, img25, img21, img22, img23, img24, img20, img19, img18, img17, img16, img15, img14, img13, img12, img11, img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
 
   return (
     <div className="overflow-hidden py-6 md:py-10 lg:pb-32 min-w-full relative">
