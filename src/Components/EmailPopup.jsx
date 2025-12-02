@@ -115,7 +115,7 @@ function EmailPopup() {
                 text="JOIN OUR DISCORD"
                 link="https://discord.gg/vDSnjmxndy"
               />
-              <div className="flex md:items-start items-center gap-4 text-white text-center  flex-col relative">
+              {/*<div className="flex md:items-start items-center gap-4 text-white text-center  flex-col relative">
                 <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none">
                   BLACK FRIDAY 30% OFF ANY PROGRAM Code: BF30
                 </p>
@@ -123,7 +123,7 @@ function EmailPopup() {
                 )}>
                   <CopyCouponButton couponCode="BF30" />
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>

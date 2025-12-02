@@ -15,11 +15,11 @@ function TopBar() {
         aria-label="Close promo" />
       <div className="flex items-center gap-4 text-white text-center md:flex-row flex-col relative py-3">
         <p className="text-[14px] md:text-xl lg:text-xl font-medium max-w-[350px] md:max-w-none">
-          BLACK FRIDAY 30% OFF ANY PROGRAM
+          CODE TRADE10 for 10% off any program
         </p>
-        <div onClick={() => navigator.clipboard.writeText("BF30"
+        <div onClick={() => navigator.clipboard.writeText("TRADE10"
               )}>
-            <CopyCouponButton couponCode="BF30" />
+            <CopyCouponButton couponCode="TRADE10" />
         </div>
       </div>
     </div>
