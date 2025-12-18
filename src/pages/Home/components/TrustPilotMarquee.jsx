@@ -33,9 +33,9 @@ function TrustPilotMarquee() {
 
   return (
     <div className="overflow-hidden relative whitespace-nowrap md:py-24 py-16">
-      <img className="absolute top-0 left-10 w-60 rotate-[28deg] opacity-30" src={dollarCubeIcon}
+      {/*<img className="absolute top-0 left-10 w-60 rotate-[28deg] opacity-30" src={dollarCubeIcon}
               alt="Dollar Cube"
-            />
+            />*/}
             <img
               className="absolute top-20 right-10 w-36 -rotate-2 opacity-30"
               src={coineCubeIcon}
@@ -46,15 +46,16 @@ function TrustPilotMarquee() {
         src={topSep}
         alt=""
       />
-      <img
+      {/*<img
         className="saperator absolute top-0 left-0 w-full z-10"
         src={botSep}
         alt=""
       />
+      */}
 
-      <div className="decoration_item shape_circle_1 scale-plus-animation">
+      {/*<div className="decoration_item shape_circle_1 scale-plus-animation">
         <img className="shape_circle" src={circleShape} alt="" />
-      </div>
+      </div>*/}
 
       {/* <div className="flex flex-wrap w-full md:mb-10 mb-8 flex-col items-center text-center">
         <motion.h2
@@ -71,7 +72,7 @@ function TrustPilotMarquee() {
       </div> */}
 
       <div className="trustPilot-container relative overflow-hidden">
-        <div className="trustPilot-marquee flex">
+        {/*<div className="trustPilot-marquee flex">
           {[...trustImages, ...trustImages].map((img, idx) => (
             <div
               key={idx}
@@ -91,7 +92,7 @@ function TrustPilotMarquee() {
               </div>
             </div>
           ))}
-        </div>
+        </div>*/}
       </div>
     </div>
   );
