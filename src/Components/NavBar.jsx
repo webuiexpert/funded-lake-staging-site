@@ -1,7 +1,8 @@
+// src/components/Navbar.jsx
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import logo from "/assets/logo.webp";
+import logo from "/assets/logo-fundedlake.webp";
 import SecondaryButton from "./SecondaryButton";
 
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
             { to: "/who-we-are", label: "WHO WE ARE" },
             { to: "/faqs", label: "FAQS" },
             { to: "/contact-us", label: "CONTACT US" },
-            { to: "forex-expo-dubai", label: "FOREX EXPO DUBAI" },
+            // { to: "#", label: "FOREX EXPO DUBAI" },
           ].map(({ to, label }) => (
             <NavLink
               key={to}
@@ -60,12 +61,8 @@ const Navbar = () => {
             BtnText="Dashboard"
             BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in"
           />
-          <div className="hidden"><SecondaryButton
-            BtnText="GET FUNDED NOW"
-            BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
-          /></div>
           <SecondaryButton
-            BtnText="SIGNUP"
+            BtnText="Signup now"
             BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-up"
           />
         </div>
@@ -117,9 +114,9 @@ const Navbar = () => {
             CONTACT US
           </NavLink>
           <NavLink
-            to="/forex-expo-dubai"
+            to="/forex-expo"
             className={({ isActive }) =>
-              `px-[15px] py-0 hover:text-white font-semibold hover:bg-primary duration-300 ${
+              `px-[15px] py-0 hover:text-white hover:bg-primary duration-300 ${
                 isActive ? "bg-primary text-white" : "text-white"
               }`
             }
@@ -132,10 +129,9 @@ const Navbar = () => {
               BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-in"
             />
             <SecondaryButton
-              BtnText="GET FUNDED NOW"
-              BtnLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163"
+              BtnText="Signup no"
+              BtnLink="https://fundedlakedashboard.propaccount.com/en/sign-up"
             />
-            
           </div>
         </div>
       )}

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "/assets/logo.webp";
+import logo from "/assets/logo-fundedlake.webp";
 import checkIcon from "/assets/bullet-points.png";
 import { Facebook, Linkedin, Youtube, Instagram, Github, Send, X } from "lucide-react";
 import { FaDiscord } from "react-icons/fa";

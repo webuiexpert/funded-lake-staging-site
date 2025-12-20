@@ -24,7 +24,7 @@ import img23 from '/assets/certificate-of-withdrawl23.jpg';
 import img24 from '/assets/certificate-of-withdrawl24.jpg';  
 import img25 from '/assets/certificate-of-withdrawl25.jpg'; 
 import img26 from '/assets/certificate-of-withdrawl26.jpg'; 
-import img27 from '/assets/certificate-of-withdrawl27.jpg';  
+import img27 from '/assets/certificate-of-withdrawl27.jpg'; 
 import topSep from "/assets/top-saprator.jpg";
 import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
