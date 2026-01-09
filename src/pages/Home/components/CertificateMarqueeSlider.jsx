@@ -27,13 +27,20 @@ import img26 from '/assets/certificate-of-withdrawl26.jpg';
 import img27 from '/assets/certificate-of-withdrawl27.jpg'; 
 import img28 from '/assets/certificate-of-withdrawl28.jpg'; 
 import img29 from '/assets/certificate-of-withdrawl29.jpg'; 
+import img30 from '/assets/certificate-of-withdrawl30.jpg';
+import img31 from '/assets/certificate-of-withdrawl31.jpg';
+import img32 from '/assets/certificate-of-withdrawl32.jpg';
+import img33 from '/assets/certificate-of-withdrawl33.jpg';
+import img34 from '/assets/certificate-of-withdrawl34.jpg';
+import img35 from '/assets/certificate-of-withdrawl35.jpg';
+import img36 from '/assets/certificate-of-withdrawl36.jpg';
 import topSep from "/assets/top-saprator.jpg";
 import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 
 const CertificateMarqueeSlider = () => {
   // Latest images first
-  const images = [img29, img28, img27, img26, img25, img21, img22, img23, img24, img20, img19, img18, img17, img16, img15, img14, img13, img12, img11, img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
+  const images = [img30, img31, img32, img33, img34, img35, img36, img29, img28, img27, img26, img25, img21, img22, img23, img24, img20, img19, img18, img17, img16, img15, img14, img13, img12, img11, img10, img9, img8, img7, img6, img5, img4, img3, img2, img1];
 
   return (
     <div className="overflow-hidden py-6 md:py-10 lg:pb-32 min-w-full relative">
