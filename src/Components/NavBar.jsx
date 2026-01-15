@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import logo from "/assets/logo-fundedlake.webp";
+import logo from "/assets/logo.webp";
 import SecondaryButton from "./SecondaryButton";
 
 const Navbar = () => {

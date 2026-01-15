@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "/assets/logo-fundedlake.webp";
+import logo from "/assets/logo.webp";
 import checkIcon from "/assets/bullet-points.png";
 import { Facebook, Linkedin, Youtube, Instagram, Github, Send, X } from "lucide-react";
 import { FaDiscord } from "react-icons/fa";
@@ -25,7 +25,7 @@ function Footer() {
               to="/"
               className="text-xl mt-2 font-bold flex items-center md:justify-start justify-center space-x-2"
             >
-              <img className="md:w-100" src={logo} alt="logo" />
+              <img src={logo} alt="logo" />
             </NavLink>
             <div className="flex gap-2 justify-center mt-6 ">
               {socialLinks.map((item, index) => (
