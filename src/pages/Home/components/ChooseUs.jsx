@@ -22,14 +22,14 @@ function ChooseUs() {
       icon: <Zap size={40} className="text-cyan-500" />,
       fimg: featureImg2,
       title: "LIGHTNING-FAST PAYOUTS",
-      desc: "Withdraw your profits in as little as 24 hours.",
+      desc: "Instant first payouts, processed within less that 24 hours!",
     },
     {
       id: 3,
       icon: <Hourglass size={40} className="text-cyan-500" />,
       fimg: featureImg3,
       title: "NO TIME LIMITS",
-      desc: "Trade at your own pace with no maximum days to complete challenges.",
+      desc: "Trade at your own pace, no minimum days and no maximum days!",
     },
     {
       id: 4,

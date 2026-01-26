@@ -212,7 +212,7 @@ function GeneralQuestionFaq({ searchTerm }) {
     {
       question: "What is the leverage?",
       answer:
-        "We offer up to 50:1 leverage on Forex and Metals, up to 10:1 leverage on Indices, up to 5:1 leverage on Oil.",
+        "We offer up to 50:1 leverage on forex and metals, up to 10:1 on indices, up to 5:1 on oil and 1:2 on crypto. Leverage on gold has been reduced to 10:1 due to high volume and volatility",
     },
     {
       question: "What are the trading hours?",
