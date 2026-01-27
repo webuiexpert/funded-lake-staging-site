@@ -20,12 +20,12 @@ function PriceTab() {
           alt=""
         />
         <div class="navy-side-gradient d-block"></div>
-        <div className="flex flex-wrap w-full lg:mb-12 mb-10 flex-col items-center text-center">
+        <div className="flex flex-wrap w-full lg:mb-7 mb-7 flex-col items-center text-center">
           <motion.h2
             className="md:leading-[1.1em] font-bold title-font mb-2 text-white"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+            transition={{ duration: 1, ease: "easeInOut"}}
             viewport={{ once: true, amount: 0.4 }} //
           >
             <span className="text-white">READY TO GET</span> FUNDED? <br />
@@ -35,6 +35,17 @@ function PriceTab() {
             Our evaluation is based on best practices and International
             Standards, customized and refined to cater to every trading style.
           </p>
+
+          {/* NEW DIV — Addition plain */}
+          <div className="mt-8 text-center">
+            <div className="priceTabUl overflow-hidden bg-[#000b1f] w-full newAdditionTab">
+              <ul>
+                <li className="text-white active_tab"><strong>FOREX/CFD</strong></li>
+                <li className="text-white"><span class="lg:text-[10px] text-[5px] text-[#fff608]">Coming Soon</span><br/> FUTURES</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
         <PriceTable />
       </div>

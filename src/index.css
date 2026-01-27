@@ -182,6 +182,22 @@ span.swiper-pagination-bullet {
   color: #fff;
   font-weight: 800;
 }
+
+.priceTabUl.newAdditionTab{width:auto !important;}
+.newAdditionTab ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.newAdditionTab ul li{
+  padding:4px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+.newAdditionTab ul li.active_tab{background-color: #032070 !important; border-radius: 100%;}
+
 /* .priceTab .react-tabs__tab-list li:hover {
   color: #181818;
 } */
