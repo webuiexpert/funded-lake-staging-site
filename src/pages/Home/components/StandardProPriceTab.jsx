@@ -10,10 +10,10 @@ function StandardProPriceTab() {
             <Tabs>
                 <TabList>
                     <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                        Standard Price
+                       Two Step Standard
                     </Tab>
                     <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                        Pro Price
+                      Two Step Pro
                     </Tab>
                 </TabList>
                 <TabPanel className="5K standard-price mt-12">
