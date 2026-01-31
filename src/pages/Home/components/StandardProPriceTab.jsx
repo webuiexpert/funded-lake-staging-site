@@ -10,17 +10,17 @@ function StandardProPriceTab() {
             <Tabs>
                 <TabList>
                     <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                       Two Step Standard
+                      Standard
                     </Tab>
                     <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                      Two Step Pro
+                      Pro
                     </Tab>
                 </TabList>
                 <TabPanel className="5K standard-price mt-12">
                     <Tabs>
                         <TabList>
                             <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                $5K Standard
+                                $5K
                             </Tab>
                             <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
                                 $10K
@@ -47,31 +47,31 @@ function StandardProPriceTab() {
                         </TabList>
                         <TabPanel className="5K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$25" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
+                            <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
                         </TabPanel>
                         <TabPanel className="10K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$50" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
+                            <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
                         </TabPanel>
                         <TabPanel className="25K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$125" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=161" />
+                            <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=161" />
                         </TabPanel>
                         <TabPanel className="50K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$225" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=162" />
+                            <PriceTableBtns dollarAmount="$350" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=162" />
                         </TabPanel>
                         <TabPanel className="100K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$450" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
+                            <PriceTableBtns dollarAmount="$700" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
                         </TabPanel>
                         <TabPanel className="250K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$1250" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=164" />
+                            <PriceTableBtns dollarAmount="$1750" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=164" />
                         </TabPanel>
                         <TabPanel className="400K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$2200" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=165" />
+                            <PriceTableBtns dollarAmount="$2800" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=165" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
@@ -79,7 +79,7 @@ function StandardProPriceTab() {
                     <Tabs>
                         <TabList>
                             <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                $5K Pro
+                                $5K
                             </Tab>
                             <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
                                 $10K

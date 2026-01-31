@@ -10,7 +10,7 @@ function TwoStepPriceCard() {
     { label: "Max Drawdown", value: "8%", description: "Equity-based, does not trail (Hard Breach)"},
     { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)"},
     { label: "Leverage", value: "1:50"},
-    { label: "Minimum Trading Day", value: "-", description: "No Minimum Trading Days"},
+    { label: "Profit Split", value: "-", description: "None"},
   ];
 
   const secondphase = [
@@ -19,7 +19,8 @@ function TwoStepPriceCard() {
     { label: "Max Drawdown", value: "8%", description: "Equity-based, does not trail (Hard Breach)"},
     { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50"},
-    { label: "Max Time", value: "-", description: "Max Time requirements" },
+    // { label: "Max Time", value: "-", description: "Max Time requirements" },
+    { label: "Profit Split", value: "-", description: "None" },
   ];
 
   const fundedSteps = [
@@ -28,7 +29,8 @@ function TwoStepPriceCard() {
     { label: "Max Drawdown", value: "8%", description: "Equity-based, does not trail (Hard Breach)"},
     { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50"},
-    { label: "Max Time", value: "-", description: "Max Time requirements" },
+    // { label: "Max Time", value: "-", description: "Max Time requirements" },
+    { label: "Profit Split", value: "-", description: "Up to 90%" },
   ];
 
   return (
