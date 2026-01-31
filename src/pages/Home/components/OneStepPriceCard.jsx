@@ -14,7 +14,9 @@ function OneStepPriceCard() {
     { label: "Max Drawdown", value: "6%", description: "Equity-based, does not trail (Hard Breach)" },
     { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50" }, // no description
-    { label: "Max Time", value: "-", description: "No Max Time requirements" },
+    { label: "Minimum Trading Day", value: "-", description: "None"},
+    // { label: "Max Time", value: "-", description: "No Max Time requirements" },
+    { label: "Profit Split", value: "-", description: "-" },
   ];
 
   const fundedSteps = [
@@ -23,7 +25,9 @@ function OneStepPriceCard() {
     { label: "Max Drawdown", value: "6%", description: "Equity-based, does not trail (Hard Breach)" },
     { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50" }, // no description
-    { label: "Max Time", value: "-", description: "No Max Time requirements" },
+    { label: "Minimum Trading Day", value: "-", description: "None"},
+    { label: "Profit Split", value: "-", description: "Up to 90%" },
+    // { label: "Max Time", value: "-", description: "No Max Time requirements" },
   ];
 
   const renderStepList = (steps, offset = 0) =>
