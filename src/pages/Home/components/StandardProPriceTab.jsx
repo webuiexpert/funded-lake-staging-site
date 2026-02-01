@@ -2,6 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import TwoStepPriceCard from "./TwoStepPriceCard";
 import PriceTableBtns from "../../../Components/PriceTableBtns";
+import TwoStepsProCrad from "./TwoStepsProCrad";
 
 
 function StandardProPriceTab() {
@@ -105,31 +106,31 @@ function StandardProPriceTab() {
                             </Tab>
                         </TabList>
                         <TabPanel className="5K">
-                            <TwoStepPriceCard />
+                            <TwoStepsProCrad />
                             <PriceTableBtns dollarAmount="$25" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
                         </TabPanel>
                         <TabPanel className="10K">
-                            <TwoStepPriceCard />
+                            <TwoStepsProCrad />
                             <PriceTableBtns dollarAmount="$50" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
                         </TabPanel>
                         <TabPanel className="25K">
-                            <TwoStepPriceCard />
+                            <TwoStepsProCrad />
                             <PriceTableBtns dollarAmount="$125" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=161" />
                         </TabPanel>
                         <TabPanel className="50K">
-                            <TwoStepPriceCard />
+                            <TwoStepsProCrad />
                             <PriceTableBtns dollarAmount="$225" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=162" />
                         </TabPanel>
                         <TabPanel className="100K">
-                            <TwoStepPriceCard />
+                            <TwoStepsProCrad />
                             <PriceTableBtns dollarAmount="$450" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
                         </TabPanel>
                         <TabPanel className="250K">
-                            <TwoStepPriceCard />
+                            <TwoStepsProCrad />
                             <PriceTableBtns dollarAmount="$1250" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=164" />
                         </TabPanel>
                         <TabPanel className="400K">
-                            <TwoStepPriceCard />
+                            <TwoStepsProCrad />
                             <PriceTableBtns dollarAmount="$2200" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=165" />
                         </TabPanel>
                     </Tabs>
