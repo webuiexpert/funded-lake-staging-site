@@ -13,6 +13,7 @@ import dollarCubeIcon from "/assets/bicon-icons-bg-left.png";
 import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 import walletIcon from "/assets/shape_wallet.png";
 import lockerIcon from "/assets/shape_locker.png";
+import TwoStepPro from "./components/TwoStepPro";
 
 function Faq() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -120,7 +121,7 @@ function Faq() {
             alt=""
           />
 
-          <div className="faq-tabs max-w-4xl mx-auto px-4 lg:px-0 md:my-16 my-10 relative z-10 overflow-hidden">
+          <div className="faq-tabs max-w-6xl mx-auto px-4 lg:px-16 md:my-16 my-10 relative z-10 overflow-hidden">
             <Tabs>
               <TabList className="text-start border-2 p-3 md:rounded-full rounded-2xl border-[#032070] justify-between flex md:flex-row flex-col items-center lg:gap-5 gap-4 text-black">
                 <Tab
@@ -133,7 +134,7 @@ function Faq() {
                   className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
                   selectedClassName="bg-[#032070] text-white"
                 >
-                  Two Step
+                  2-Step Standard
                 </Tab>
                 <Tab
                   className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
@@ -146,6 +147,12 @@ function Faq() {
                   selectedClassName="bg-[#032070] text-white"
                 >
                   general questions
+                </Tab>
+                <Tab
+                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
+                  selectedClassName="bg-[#032070] text-white"
+                >
+                  2-step Pro
                 </Tab>
               </TabList>
 
@@ -163,6 +170,9 @@ function Faq() {
 
               <TabPanel className="general-ques text-start md:mt-10 mt-5">
                 <GeneralQuestionFaq searchTerm={searchTerm} />
+              </TabPanel>
+              <TabPanel className="pro-ques text-start md:mt-10 mt-5">
+                <TwoStepPro searchTerm={searchTerm} />
               </TabPanel>
             </Tabs>
           </div>

@@ -215,7 +215,7 @@ function StepTwoFaq({ searchTerm }) {
             transition={{ duration: 1, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.4 }} //
           >
-            <span className="text-[var(--primary-color)]">TWO</span> STEP QUESTIONS
+            <span className="text-[var(--primary-color)]">2-Step</span> Standard
           </motion.h3>
       <div className="space-y-4 ">
         {filteredFaqs.map((faq, index) => (
