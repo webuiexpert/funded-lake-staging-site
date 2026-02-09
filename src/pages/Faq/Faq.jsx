@@ -136,6 +136,12 @@ function Faq() {
                 >
                   2-Step Standard
                 </Tab>
+                 <Tab
+                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
+                  selectedClassName="bg-[#032070] text-white"
+                >
+                  2-step Pro
+                </Tab>
                 <Tab
                   className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
                   selectedClassName="bg-[#032070] text-white"
@@ -148,12 +154,6 @@ function Faq() {
                 >
                   general questions
                 </Tab>
-                <Tab
-                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
-                  selectedClassName="bg-[#032070] text-white"
-                >
-                  2-step Pro
-                </Tab>
               </TabList>
 
               <TabPanel className="one-step text-start mt-10">
@@ -164,15 +164,16 @@ function Faq() {
                 <StepTwoFaq searchTerm={searchTerm} />
               </TabPanel>
 
+               <TabPanel className="pro-ques text-start md:mt-10 mt-5">
+                <TwoStepPro searchTerm={searchTerm} />
+              </TabPanel>
+
               <TabPanel className="instant-funding text-start mt-10">
                 <InstantFundingFaq searchTerm={searchTerm} />
               </TabPanel>
 
               <TabPanel className="general-ques text-start md:mt-10 mt-5">
                 <GeneralQuestionFaq searchTerm={searchTerm} />
-              </TabPanel>
-              <TabPanel className="pro-ques text-start md:mt-10 mt-5">
-                <TwoStepPro searchTerm={searchTerm} />
               </TabPanel>
             </Tabs>
           </div>

@@ -4,264 +4,36 @@ import { motion } from "framer-motion";
 function TwoStepPro({ searchTerm }) {
   const faqs = [
     {
-      question: "What is 1 lot equal to on the Trading Platform?",
+      question: "Is there a breach for inactivity?",
       answer: (
         <div className="space-y-4 text-white text-[16px] leading-relaxed">
-          <ul className="list-disc list-inside">
-            <li>Forex: 1 lot = $100k notional</li>
-            <li>
-              Index: 1 lot = 1 Contract
-              <p>
-                Exceptions: SPX500: 1 lot = 10 contracts JPN225: 1 lot = 500
-                contracts
-              </p>
-            </li>
-            <li>Cryptos: 1 lot = 1 coin</li>
-            <li>Silver: 1 lot = 5000 ounces</li>
-            <li>Gold: 1 lot = 100 ounces</li>
-            <li>Oil: 1 lot = 100 barrels</li>
-          </ul>
+          <p>Yes. We will consider you inactive and your account will be breached if you do not have any trading activity on your account for 30 consecutive days.</p>
         </div>
       ),
     },
     {
-      question: "What is the policy on Prohibited Trading Activity?",
+      question: "How does lock upon payout work?",
       answer: (
         <div className="space-y-4 text-white text-[16px] leading-relaxed">
           <p>
-            You are also prohibited from using any trading strategy that is
-            expressly prohibited by the Company or the Liquidity Providers it
-            uses. Such prohibited trading (“Prohibited Trading”) shall include,
-            but not be limited to:
+            A trader has a $100,000 account and grows the balance to $110,000. When the trader submits a payout request, the maximum drawdown becomes permanently locked at the original starting balance of $100,000. From that point forward, the account balance may not fall below $100,000. If it does, the account will be considered breached.
+It is recommended for the trader to keep a buffer when requesting a payout in this program.
+
           </p>
-          <ul className="list-disc list-inside">
-            <li>
-              Exploiting errors or latency in the pricing and/or platform(s)
-              provided by the Liquidity Provider
-            </li>
-            <li>Utilizing non-public and/or insider information</li>
-            <li>Front-running of trades placed elsewhere</li>
-            <li>
-              Trading in any way that jeopardizes the relationship that the
-              Company has with a Liquidity Provider or may result in the
-              canceling of trades
-            </li>
-            <li>
-              Trading in any way that creates regulatory issues for the
-              Liquidity Provider
-            </li>
-            <li>
-              Utilizing any third-party strategy, off-the-shelf strategy or one
-              marketed to pass challenge accounts
-            </li>
-            <li>
-              Utilizing one strategy to pass an assessment and then utilizing a
-              different strategy in a funded account, as determined by the
-              Company at their discretion.
-            </li>
-            <li>
-              Attempting to arbitrage an assessment account with another account
-              with the Company or any third-party company, as determined by the
-              Company in its sole and absolute discretion.
-            </li>
-            <li>
-              If the Company detects that your trading constitutes Prohibited
-              Trading, your participation in the program will be terminated and
-              may include forfeiture of any fees paid to the Company.
-              Additionally, and before any Trader shall receive a funded
-              account, the trading activity of the Trader under these Terms and
-              Conditions shall be reviewed by both the Company and the Liquidity
-              Provider to determine whether such trading activity constitutes
-              Prohibited Trading. In the case of Prohibited Trading, the Trader
-              shall not receive a funded account.
-            </li>
-            <li>
-              Additionally, the Company reserves the right to disallow or block
-              any Trader from participating in the program for any reason, in
-              the Company’s sole and absolute discretion. To view all Prohibited
-              Uses, please review our Terms and Conditions here,{" "}
-              <a
-                className="text-red-600"
-                href="https://dashboardanalytix.com/client-terms-and-policies/?v=3acf83834396"
-              >
-                https://dashboardanalytix.com/client-terms-and-policies/?v=3acf83834396
-              </a>
-            </li>
-          </ul>
         </div>
       ),
     },
 
     {
       question:
-        "How many Assessments and/or Funded accounts may I have active at one time?",
+        "How do you calculate the maximum drawdown",
       answer: (
         <div className="space-y-4 text-white text-[16px] leading-relaxed">
           <p>
-            <strong>Evaluation Limits:</strong>
-          </p>
-          <ul className="list-disc list-inside">
-            <li>
-              You are allowed to take only one evaluation of a specific account
-              size and a specific plan tier at a time across all trading
-              platforms.
-            </li>
-            <li>
-              <strong>Example:</strong> You can have one 100k One Step Plan and
-              one 100k Two Step Plan active simultaneously. However, you cannot
-              have one 100k One Step Plan on DXTrade and another 100k One Step
-              Plan on cTrader, or 2+ 100k 1 Step plans on any combination of
-              platforms.{" "}
-            </li>
-          </ul>
-          <p>
-            <strong>Maximum Assessment Limits:</strong>
-          </p>
-          <ul className="list-disc list-inside">
-            <li>
-              A maximum of $1 million in active evaluation plans per person is
-              permitted. This can be composed of multiple assessments, provided
-              that none are the same account size and are within the same Step
-              framework as described above.{" "}
-            </li>
-          </ul>
-          <p>
-            <strong>Maximum Funded Limits:</strong>
-          </p>
-          <ul className="list-disc list-inside">
-            <li>
-              A maximum of $1 million in active funded plans per person is
-              permitted.
-            </li>
-            <li>
-              If a customer passes multiple assessments and has 2 active funded
-              accounts of the same account size, they will have 2 options:-
-            </li>
-          </ul>
-          <ol className="list-decimal list-inside pl-8">
-            <li>
-              Only have one funded account of that size open at a time and wait
-              for the account to be breached before making the other funded
-              account active.
-            </li>
-            <li>
-              If no trading has taken place in either account, the customer can
-              opt to combine the 2 accounts into a single account of double the
-              size.
-            </li>
-          </ol>
-          <p>
-            <strong>Compounding Limits:</strong>
-          </p>
-          <ul className="list-disc list-inside">
-            <li>There are no limits on compounding.</li>
-            <li>
-              You can start with up to $1 million of initial funding and grow
-              the account to any balance you desire, including $10 million, $20
-              million, and beyond.
-            </li>
-          </ul>
+            Maximum drawdown is the maximum your account can drawdown before you would hard breach your account. When you open the account, your Maximum Drawdown is set at 7% of your starting balance. This 7% is static and does not trail until the lock upon payout takes place  after the payout.
+           </p>
         </div>
       ),
-    },
-
-    {
-      question:
-        "Do we manipulate the pricing or executions you receive in your Funded Account?",
-      answer:
-        "No. We do not have any control over pricing from the liquidity provider or on the executions on your trades.",
-    },
-
-    {
-      question: "Who is the counterparty to my trades?",
-      answer:
-        "For purposes of managing risk and minimizing transaction costs, we may offset or negate market risk and act as the direct counterparty to certain trades initiated in the Account. Such trades are executed at prices provided by arm’s length third parties. This framework is intended to ensure you receive real market execution on your trades, while simultaneously allowing us to manage risk dynamically by routing existing positions or future orders to third parties for execution as we deem appropriate. We believe that such real market execution and dynamic risk management would not be possible or as cost-effective if trades were executed in simulated accounts. Regardless of whether we act as counterparty to your trades, the gain or loss on your funded account is not calculated differently. However, when we act as the counterparty to your trades, there is an inherent potential conflict of interest because your trades do not result in net gain or loss to us, as your trades would if we were not the direct counterparty.",
-    },
-    {
-      question:
-        "Do I have to use one of your accounts for the Assessment or can I use my own?",
-      answer:
-        "We have risk management software that is synced with the accounts we create. This allows us to analyze your performance in real time for achievements or rule violations. As such, you must use an account that we provide to you.",
-    },
-    {
-      question: "What Countries are accepted?",
-      answer:
-        "Subject to compliance with applicable laws and regulations, traders from all countries, excluding OFAC listed countries, can take part in our program, unless otherwise limited at the Company’s discretion.",
-    },
-    {
-      question: "What is the minimum age I must be to be part of your program?",
-      answer:
-        "You must be at least 18 years of age, or the applicable minimum legal age in your country, to purchase an assessment.",
-    },
-    {
-      question: "Where do I track the progress of my account?",
-      answer:
-        "Upon purchasing an Assessment, you will receive access to a trader dashboard where you can monitor your Assessment and Funded Accounts. The dashboard is updated every time we calculate metrics, which occurs roughly every 60 seconds. It is your responsibility to monitor your breach levels.",
-    },
-    {
-      question: "What Platform can I trade on?",
-      answer:
-        "Our technology is currently integrated with DXtrade, MatchTrader & cTrader platforms via GooeyTrade",
-    },
-    {
-      question: "What products can I trade?",
-      answer:
-        "You can trade any products streamed by the Liquidity Provider into the available platforms, as such products may change from time to time. This includes FX pairs and CFD Indices, Commodities, Metals.",
-    },
-
-    {
-      question: "What is the leverage?",
-      answer:
-        "We offer up to 50:1 leverage on forex and metals, up to 10:1 on indices, up to 5:1 on oil and 1:2 on crypto. Leverage on gold has been reduced to 10:1 due to high volume and volatility",
-    },
-    {
-      question: "What are the trading hours?",
-      answer: (
-        <div className="space-y-4 text-white text-[16px] leading-relaxed">
-          <p>
-            Trading hours are generally set by the Liquidity Provider, unless
-            set by our rules. We do not have any control over the trading hours.
-            You can see the trading hours for each product by using the
-            following methods:
-          </p>
-          <p>
-            Trading hours are generally set by the Liquidity Provider, unless
-            set by our rules. We do not have any control over the trading hours.
-            You can see the trading hours for each product by using the
-            following methods:
-          </p>
-        </div>
-      ),
-    },
-
-    {
-      question: "Do your accounts charge commissions?",
-      answer:
-        "Funded accounts receive the same pricing and commissions as charged by our Liquidity Provider to other, self-funded, retail trading accounts.",
-    },
-    {
-      question: "Can I use an Automated Strategies?",
-      answer:
-        "Subject to our policy on Prohibited Trading as described below, you can trade using an automated strategy.",
-    },
-    {
-      question: "Can I trade during News Events?",
-      answer:
-        "Trading within 3 minutes before or after a News Event is prohibited. If the Company determines that trading has, in fact, occurred during the News Event. Any traders identified as having trading during a News Event during the challenge phase are subject to having those trades removed, having the leverage on their account reduced or having their account breached altogether. The Company has sole and absolute discretion in determining what constitutes a News Event.",
-    },
-    {
-      question: "How will I see the charge on my Statement?",
-      answer: "Charges come across in the name of dashboardanalytix.com.",
-    },
-    {
-      question: "How are taxes handled?",
-      answer:
-        "When trading a Funded Account for our firm, you are treated as an independent contractor. As a result, you are responsible for any and all taxes on your gains.",
-    },
-    {
-      question: "How are affiliates credited?",
-      answer:
-        "Affiliates are credited for referrals when a user creates an account using a link or discount code provided by the Affiliate.",
     },
   ];
 
