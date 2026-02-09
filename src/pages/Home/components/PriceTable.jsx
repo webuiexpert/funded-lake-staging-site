@@ -1,7 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import OneStepPriceCard from "./OneStepPriceCard";
-
 import InstantPriceCard from "./InstantPriceCard";
 import PrimaryButton from "../../../Components/PrimaryButton";
 import PriceTableBtns from "../../../Components/PriceTableBtns";
