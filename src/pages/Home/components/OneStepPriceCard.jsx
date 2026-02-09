@@ -14,9 +14,9 @@ function OneStepPriceCard() {
     { label: "Max Drawdown", value: "6%", description: "Equity-based, does not trail (Hard Breach)" },
     { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50" }, // no description
-    { label: "Minimum Trading Days", value: "-", description: "None"},
+    { label: "Minimum Trading Days", value: "None", description: "No minimum trading days"},
     // { label: "Max Time", value: "-", description: "No Max Time requirements" },
-    { label: "Profit Split", value: "-", description: "-" },
+    { label: "Profit Split", value: "Up to 90%", description: "Up to 90%" },
   ];
 
   const fundedSteps = [
@@ -25,8 +25,8 @@ function OneStepPriceCard() {
     { label: "Max Drawdown", value: "6%", description: "Equity-based, does not trail (Hard Breach)" },
     { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50" }, // no description
-    { label: "Minimum Trading Days", value: "-", description: "None"},
-    { label: "Profit Split", value: "-", description: "Up to 90%" },
+    { label: "Minimum Trading Days", value: "None", description: "No minimum trading days"},
+    { label: "Profit Split", value: "Up to 90%", description: "Up to 90%" },
     // { label: "Max Time", value: "-", description: "No Max Time requirements" },
   ];
 
