@@ -10,7 +10,7 @@ function InstantPriceCard() {
 
   const evaluationSteps = [
     { label: "Profit Target", value: "-", description: "Funded account has no profit limit" },
-    { label: "Equity-based on current day balance", value: "5%", description: "Equity-based, based on prior day balance (Hard Breach)" },
+    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
     { label: "Max Drawdown", value: "8%", description: "Equity-based, trailing account balance high water mark, locks in at starting account balance (Hard Breach). Account locks at starting balance at payout." },
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50" }, // no description

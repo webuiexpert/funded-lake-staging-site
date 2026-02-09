@@ -6,7 +6,7 @@ import phaseBgBlueImg from "/assets/blue-bg-light.png";
 function TwoStepPriceCard() {
   const onephase = [
     { label: "Profit Target", value: "8%", description: "8% target of initial balance"},
-    { label: "Equity-based on current day balance", value: "5%", description: "Equity-based, based on prior day balance (Hard Breach)" },
+    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
     { label: "Max Drawdown", value: "8%", description: "Equity-based, does not trail (Hard Breach)"},
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)"},
     { label: "Leverage", value: "1:50"},
@@ -16,7 +16,7 @@ function TwoStepPriceCard() {
 
   const secondphase = [
     { label: "Profit Target", value: "5%", description: "5% target of initial balance" },
-    { label: "Equity-based on current day balance", value: "5%", description: "Equity-based, based on prior day balance (Hard Breach)" },
+    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
     { label: "Max Drawdown", value: "8%", description: "Equity-based, does not trail (Hard Breach)"},
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50"},
@@ -27,7 +27,7 @@ function TwoStepPriceCard() {
 
   const fundedSteps = [
     { label: "Profit Target", value: "-", description: "Funded account has no profit limit" },
-    { label: "Equity-based on current day balance", value: "5%", description: "Equity-based, based on prior day balance (Hard Breach)" },
+    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
     { label: "Max Drawdown", value: "8%", description: "Equity-based, does not trail (Hard Breach)"},
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50"},
