@@ -53,10 +53,18 @@ function StepOneFaq({ searchTerm }) {
       answer: (
         <div className="space-y-4 text-white text-[16px] leading-relaxed">
           <p>
-            Maximum drawdown is the maximum your account can drawdown before you
-            would hard breach your account. When you open the account, your
-            Maximum Drawdown is set at 8% of your starting balance. This 8% is
-            static and does not trail.
+            The Maximum Drawdown is initially set at 6% and is static (using
+            CLOSED BALANCE) and will therefore remain at the same value for as
+            long as the account will remain active.
+          </p>
+          <p>
+            <span className="font-bold text-orange-500">Example:</span> If your
+            starting balance is $100,000, you can drawdown to $94,000 before you
+            would violate the Maximum Drawdown rule. Then for example let’s say
+            you take your account to $102,000 in CLOSED BALANCE, your Maximum
+            Drawdown would remain locked at $94,000. So, regardless of how high
+            your account goes, your drawdown will remain the same (note, you can
+            still violate the daily drawdown).
           </p>
         </div>
       ),
@@ -156,6 +164,20 @@ function StepOneFaq({ searchTerm }) {
       question: "How Long does it take to receive my funded account?",
       answer:
         "Upon passing your Assessment, you will receive an email with instructions on how to access and complete both your “Know Your Customer” verification and your “Trader Agreement”. Once both are completed and supporting documentation is provided, your Funded Account will be created, funded and issued to you typically within 24-48 business hours. You will receive a confirmation email once this account is being enabled.",
+    },
+    {
+      question:
+        "How does lock upon payout work?",
+      answer: (
+        <div className="space-y-4 text-white text-[16px] leading-relaxed">
+          <p>
+            In the one step program, the lock upon payout is OPTIONAL. It could be disabled at checkout. 
+            <br /><br />
+            <strong>How it works:</strong><br />
+            A trader has a $100,000 account and grows the balance to $110,000. When the trader submits a payout request, the maximum drawdown becomes permanently locked at the original starting balance of $100,000. From that point forward, the account balance may not fall below $100,000. If it does, the account will be considered breached. It is recommended for the trader to keep a buffer when requesting a payout in this program.
+          </p>
+        </div>
+      ),
     },
   ];
 

@@ -65,18 +65,10 @@ function StepTwoFaq({ searchTerm }) {
       answer: (
         <div className="space-y-4 text-white text-[16px] leading-relaxed">
           <p>
-            The Maximum Drawdown is initially set at 6% and is static (using
-            CLOSED BALANCE) and will therefore remain at the same value for as
-            long as the account will remain active.
-          </p>
-          <p>
-            <span className="font-bold text-orange-500">Example:</span> If your
-            starting balance is $100,000, you can drawdown to $94,000 before you
-            would violate the Maximum Drawdown rule. Then for example let’s say
-            you take your account to $102,000 in CLOSED BALANCE, your Maximum
-            Drawdown would remain locked at $94,000. So, regardless of how high
-            your account goes, your drawdown will remain the same (note, you can
-            still violate the daily drawdown).
+            Maximum drawdown is the maximum your account can drawdown before you
+            would hard breach your account. When you open the account, your
+            Maximum Drawdown is set at 8% of your starting balance. This 8% is
+            static and does not trail.
           </p>
         </div>
       ),

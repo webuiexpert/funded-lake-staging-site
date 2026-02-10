@@ -17,6 +17,7 @@ function OneStepPriceCard() {
     { label: "Minimum Trading Days", value: "None", description: "No minimum trading days"},
     // { label: "Max Time", value: "-", description: "No Max Time requirements" },
     { label: "Profit Split", value: "Up to 90%", description: "Up to 90%" },
+    { label: "Lock Upon Payout", value: "optional", description: "option to disable the lock on checkout" },
   ];
 
   const fundedSteps = [
@@ -28,6 +29,7 @@ function OneStepPriceCard() {
     { label: "Minimum Trading Days", value: "None", description: "No minimum trading days"},
     { label: "Profit Split", value: "Up to 90%", description: "Up to 90%" },
     // { label: "Max Time", value: "-", description: "No Max Time requirements" },
+    { label: "Lock Upon Payout", value: "optional", description: "option to disable the lock on checkout" },
   ];
 
   const renderStepList = (steps, offset = 0) =>
