@@ -11,6 +11,28 @@ function TwoStepPro({ searchTerm }) {
         </div>
       ),
     },
+
+    {
+      question: "How do you calculate the Daily Loss Limit?",
+      answer: (
+        <div className="space-y-4 text-white text-[16px] leading-relaxed">
+          <p>
+            The Daily Drawdown calculation will be based on the greater of the end of day BALANCE (closed P&L only) OR end of day EQUITY (balance + open P&L).
+          </p>
+          <p>
+            As an example, if a trader has profitable trades open at the end of the day, the trader’s equity will be higher than the balance. In this case, the equity will be used for the daily drawdown metric.
+          </p>
+            <p>
+           As another example, if a $100k account, with 5% daily drawdown, finishes the day with open trades and has a balance of $100k and equity of $102k, since the equity is higher, the breach level will be based on the $102k equity value, resulting in a breach level of $96.9k
+          </p>
+            <p>
+            If a trader has no open trades , balance and equity are the same → balance will be used for the daily drawdown metric (no change to the current calculation).
+          </p>
+          <p>If a trader has no open trades , balance and equity are the same → balance will be used for the daily drawdown metric (no change to the current calculation).</p>
+        </div>
+      ),
+    },
+
     {
       question: "How does lock upon payout work?",
       answer: (

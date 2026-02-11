@@ -38,25 +38,18 @@ function StepTwoFaq({ searchTerm }) {
       answer: (
         <div className="space-y-4 text-white text-[16px] leading-relaxed">
           <p>
-            The Daily Loss Limit is the maximum your account can lose in any
-            given day. Daily Loss Limit is calculated using the previous day
-            balance which resets at 5 PM EST. The Daily Stop compounds with the
-            increase in your account.Example: if your prior day’s end of day
-            balance (5pm EST) was $100,000, your account would violate the daily
-            stop loss limit if your equity reached $95,000 during the day. If
-            your floating equity is +$5,000 on a $100,000 account, your new- day
-            (5pm EST) max loss is based on your balance from the previous day
-            ($100,000). So, your daily loss limit would still be $95,000.
+            The Daily Drawdown calculation will be based on the greater of the end of day BALANCE (closed P&L only) OR end of day EQUITY (balance + open P&L).
           </p>
           <p>
-            <span className="font-bold text-orange-500">Example:</span> if your
-            prior day’s end of day balance (5pm EST) was $100,000, your account
-            would violate the daily stop loss limit if your equity reached
-            $95,000 during the day. If your floating equity is +$5,000 on a
-            $100,000 account, your new- day (5pm EST) max loss is based on your
-            balance from the previous day ($100,000). So, your daily loss limit
-            would still be $95,000.
+            As an example, if a trader has profitable trades open at the end of the day, the trader’s equity will be higher than the balance. In this case, the equity will be used for the daily drawdown metric.
           </p>
+            <p>
+           As another example, if a $100k account, with 5% daily drawdown, finishes the day with open trades and has a balance of $100k and equity of $102k, since the equity is higher, the breach level will be based on the $102k equity value, resulting in a breach level of $96.9k
+          </p>
+            <p>
+            If a trader has no open trades , balance and equity are the same → balance will be used for the daily drawdown metric (no change to the current calculation).
+          </p>
+          <p>If a trader has no open trades , balance and equity are the same → balance will be used for the daily drawdown metric (no change to the current calculation).</p>
         </div>
       ),
     },

@@ -36,7 +36,7 @@ function TwoStepsProCrad() {
     // { label: "Max Time", value: "-", description: "Max Time requirements" },
     { label: "Minimum Trading Days", value: "None", description: "No minimum trading days"},
     { label: "Profit Split", value: "Up to 90%", description: "Up to 90%" },
-    { label: "Lock upon payout", value: "-", description: "Check faqs for more details about lock upon payout" },
+    { label: "Lock upon payout", value: "Yes", description: "Check faqs for more details about lock upon payout" },
   ];
 
   return (
