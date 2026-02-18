@@ -117,10 +117,10 @@ function EmailPopup() {
               />
               <div className="flex md:items-start items-center gap-4 text-white text-left  flex-col relative">
                 <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none">
-                  Love trading ? We got you! Use code LOVE25  for 25% off all programs
+                  Use TRADE10 for 10% OFF all programs
                 </p>
-                <div onClick={() => navigator.clipboard.writeText("LOVE25")}>
-                  <CopyCouponButton couponCode="LOVE25" />
+                <div onClick={() => navigator.clipboard.writeText("TRADE10")}>
+                  <CopyCouponButton couponCode="TRADE10" />
                 </div>
               </div>
             </div>
