@@ -61,15 +61,12 @@ function FutureStandardProPriceTab() {
                         </TabList>
                         <TabPanel className="50K-tab">
                             <FiftyPriceCard />
-                            {/* <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" /> */}
                         </TabPanel>
                         <TabPanel className="100K-tab">
                             <HundredPriceCard />
-                            {/* <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" /> */}
                         </TabPanel>
                         <TabPanel className="150K-tab">
                             <OneFiftyPriceCard />
-                            {/* <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" /> */}
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
