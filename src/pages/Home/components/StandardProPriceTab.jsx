@@ -48,31 +48,31 @@ function StandardProPriceTab() {
                         </TabList>
                         <TabPanel className="5K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
+                            <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" />
                         </TabPanel>
                         <TabPanel className="10K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=160" />
+                            <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="25K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=161" />
+                            <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
                         </TabPanel>
                         <TabPanel className="50K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$350" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=162" />
+                            <PriceTableBtns dollarAmount="$350" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=294" />
                         </TabPanel>
                         <TabPanel className="100K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$700" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=163" />
+                            <PriceTableBtns dollarAmount="$700" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=295" />
                         </TabPanel>
                         <TabPanel className="250K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$1750" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=164" />
+                            <PriceTableBtns dollarAmount="$1750" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=296" />
                         </TabPanel>
                         <TabPanel className="400K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$2800" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=165" />
+                            <PriceTableBtns dollarAmount="$2800" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=297" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
