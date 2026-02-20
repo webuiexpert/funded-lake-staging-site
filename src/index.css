@@ -167,6 +167,17 @@ span.swiper-pagination-bullet {
   margin: 0 auto;
   padding: 10px;
 }
+.priceTabU-01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #1f2146;
+  border-radius: 100px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  gap:24px
+}
 .priceTabUl li {
   border-radius: 100px !important;
 }
