@@ -10,10 +10,10 @@ function StandardProPriceTab() {
         <div>
             <Tabs>
                 <TabList>
-                    <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+                    <Tab className="my-2 mx-2 lg:px-6 uppercase md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
                       Standard
                     </Tab>
-                    <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+                    <Tab className="my-2 mx-2 lg:px-6 uppercase md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
                       Pro
                     </Tab>
                 </TabList>

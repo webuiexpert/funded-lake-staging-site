@@ -11,10 +11,10 @@ function FutureStandardProPriceTab() {
         <div>
             <Tabs>
                 <TabList>
-                    <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+                    <Tab className="my-2 mx-2 uppercase lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
                         Standard
                     </Tab>
-                    <Tab className="my-2 mx-2 lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+                    <Tab className="my-2 mx-2 uppercase lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
                         Pro
                     </Tab>
                 </TabList>
@@ -33,15 +33,15 @@ function FutureStandardProPriceTab() {
                         </TabList>
                         <TabPanel className="50K-tab">
                             <FiftyPriceCard />
-                            {/* <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" /> */}
+                            <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" />
                         </TabPanel>
                         <TabPanel className="100K-tab">
                             <HundredPriceCard />
-                            {/* <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" /> */}
+                            <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
                             <OneFiftyPriceCard />
-                            {/* <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" /> */}
+                            <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
@@ -59,14 +59,17 @@ function FutureStandardProPriceTab() {
                                 <div>150K <span className="ml-5 inline-block">$199/Month</span></div>
                             </Tab>
                         </TabList>
-                        <TabPanel className="50K-tab">
+                          <TabPanel className="50K-tab">
                             <FiftyPriceCard />
+                            <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" />
                         </TabPanel>
                         <TabPanel className="100K-tab">
                             <HundredPriceCard />
+                            <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
                             <OneFiftyPriceCard />
+                            <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
