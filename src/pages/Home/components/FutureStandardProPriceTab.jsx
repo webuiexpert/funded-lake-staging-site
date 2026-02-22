@@ -11,10 +11,10 @@ function FutureStandardProPriceTab() {
         <div className="relative z-50">
             <Tabs>
                 <TabList>
-                    <Tab className="my-2 mx-2 uppercase lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+                    <Tab className="my-2 mx-2 uppercase lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 text-white hover:text-white rounded-full">
                         Standard
                     </Tab>
-                    <Tab className="my-2 mx-2 uppercase lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
+                    <Tab className="my-2 mx-2 uppercase lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 text-white hover:text-white rounded-full">
                         Pro
                     </Tab>
                 </TabList>
