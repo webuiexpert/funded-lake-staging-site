@@ -14,9 +14,9 @@ import FutureStandardProPriceTab from "./FutureStandardProPriceTab";
 function PriceTab() {
   return (
     <div className="relative">
-      <div className="w-full max-w-6xl mx-auto px-4 pt-10 md:pt-0 lg:px-0 lg:py-6 ">
+      <div className="w-full relative z-10 max-w-6xl mx-auto px-4 pt-10 md:pt-0 lg:px-0 lg:py-6 ">
         <div class="navy-left-side-gradient d-block"></div>
-        <div class="navy-right-side-gradient d-block"></div>
+        <div class="navy-right-side-gradient md:d-block hidden"></div>
         <img
           className="scale-plus-animation absolute left-10 w-56 rotate-28 md:block hidden"
           src={dollarCubeIcon}

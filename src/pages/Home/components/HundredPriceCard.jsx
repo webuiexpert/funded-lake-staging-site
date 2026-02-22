@@ -10,25 +10,25 @@ function HundredPriceCard() {
   };
 
   const evaluationSteps = [
-    { label: "Profit Target", value: "6000", description: "" },
-    { label: "Max Loss Limit", value: "3000", description: "" },
-    { label: "Daily Loss", value: "None", description: "" },
+    { label: "Profit Target", value: "6000", description: "Lorem ipsum -" },
+    { label: "Max Loss Limit", value: "3000", description: "Lorem ipsum -" },
+    { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
     { label: "Activation Fee", value: "None" }, // no description
-    { label: "Consistency Rule", value: "40%", description: ""},
-    { label: "News Trending", value: "Yes", description: "" },
-    { label: "Max Contract Size", value: "8 Mins", description: "" },
-    { label: "Profit Split", value: "-", description: "" },
+    { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
+    { label: "News Trending", value: "Yes", description: "Lorem ipsum -" },
+    { label: "Max Contract Size", value: "8 Mins", description: "Lorem ipsum -" },
+    { label: "Profit Split", value: "-", description: "Lorem ipsum -" },
   ];
 
   const fundedSteps = [
-    { label: "Profit Target", value: "None", description: "" },
-    { label: "Max Loss Limit", value: "3000", description: "" },
-    { label: "Daily Loss", value: "None", description: "" },
+    { label: "Profit Target", value: "None", description: "Lorem ipsum -" },
+    { label: "Max Loss Limit", value: "3000", description: "Lorem ipsum -" },
+    { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
     { label: "Activation Fee", value: "$120" }, // no description
-    { label: "Consistency Rule", value: "40%", description: ""},
-    { label: "News Trending", value: "No", description: "" },
-    { label: "Max Contract Size", value: "4 Mins", description: "" },
-    { label: "Profit Split", value: "80%", description: "" },
+    { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
+    { label: "News Trending", value: "No", description: "Lorem ipsum -" },
+    { label: "Max Contract Size", value: "4 Mins", description: "Lorem ipsum -" },
+    { label: "Profit Split", value: "80%", description: "Lorem ipsum -" },
   ];
 
   const renderStepList = (steps, offset = 0) =>
