@@ -14,8 +14,8 @@ function FiftyPriceCard() {
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
     { label: "Activation Fee", value: "None" }, // no description
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
-    { label: "News Trending", value: "Yes", description: "Lorem ipsum -" },
-    { label: "Max Contract Size", value: "4 Mins", description: "Lorem ipsum -" },
+    { label: "News Trading", value: "Yes", description: "Lorem ipsum -" },
+    { label: "Max Contract Size", value: "4 Minis", description: "Lorem ipsum -" },
     { label: "Profit Split", value: "-", description: "Lorem ipsum -" },
   ];
 
@@ -25,8 +25,8 @@ function FiftyPriceCard() {
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
     { label: "Activation Fee", value: "$120" }, // no description
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
-    { label: "News Trending", value: "No", description: "Lorem ipsum -" },
-    { label: "Max Contract Size", value: "2 Mins", description: "Lorem ipsum -" },
+    { label: "News Trading", value: "No", description: "Lorem ipsum -" },
+    { label: "Max Contract Size", value: "2 Minis", description: "Lorem ipsum -" },
     { label: "Profit Split", value: "80%", description: "Lorem ipsum -" },
   ];
 
@@ -62,7 +62,7 @@ function FiftyPriceCard() {
       <div className="phase-box grid md:grid-cols-2 grid-cols-1 gap-6 mt-12 lg:w-[100%] mx-auto">
         {/* Evaluation */}
         <div className="evalution-phase rounded-[40px] flex flex-col justify-start items-start bg-dark md:px-8 md:py-12 px-6 py-10">
-          <h3 className="lg:text-[27px] text-2xl font-extrabold mb-4 uppercase">
+          <h3 className="lg:text-[27px] text-2xl text-white font-extrabold mb-4 uppercase">
             <span className="text-[#0062e5]">Evaluation</span> Phase
           </h3>
           <hr className="bg-blue-900 border border-primary h-[1px] w-full my-8" />

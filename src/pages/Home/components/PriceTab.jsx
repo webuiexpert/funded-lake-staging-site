@@ -47,10 +47,10 @@ function PriceTab() {
         <div>
           <Tabs>
             <TabList className="priceTabU-01 overflow-hidden bg-[#000b1f] w-full">
-              <Tab className="cursor-pointer md:px-6 md:py-3 py-2 px-4 bg-dark mx-0 hover:bg-[#032070] duration-200 hover:text-dark font-bold rounded-full">
+              <Tab className="cursor-pointer md:px-6 md:py-3 py-2 px-4 bg-dark mx-0 hover:bg-[#032070] duration-200 text-white font-bold rounded-full">
                 FOREX/CFD
               </Tab>
-              <Tab className="cursor-pointer md:px-6 md:py-3 py-2 px-4 bg-dark mx-0 hover:bg-[#032070] duration-200 hover:text-dark font-bold  rounded-full">
+              <Tab className="cursor-pointer md:px-6 md:py-3 py-2 px-4 bg-dark mx-0 hover:bg-[#032070] duration-200 text-white font-bold  rounded-full">
                 FUTURES
               </Tab>
             </TabList>
