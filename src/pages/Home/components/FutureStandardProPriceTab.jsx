@@ -14,20 +14,20 @@ function FutureStandardProPriceTab() {
                         Standard
                     </Tab>
                     <Tab className="my-2 mx-2 uppercase lg:px-6 md:px-2 md:py-3 px-4 hover:bg-[#032070] duration-200 text-white hover:text-white rounded-full">
-                        Pro
+                        Plus
                     </Tab>
                 </TabList>
                 <TabPanel className="standard-tab mt-10">
                     <Tabs>
                         <TabList>
                             <Tab className="50k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>50K <span className="ml-5 inline-block">$119/Month</span></div>
+                                <div>50K <span className="ml-5 inline-block">$129/Month</span></div>
                             </Tab>
                             <Tab className="100k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>100K <span className="ml-5 inline-block">$159/Month</span></div>
+                                <div>100K <span className="ml-5 inline-block">$179/Month</span></div>
                             </Tab>
                             <Tab className="150k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>150K <span className="ml-5 inline-block">$199/Month</span></div>
+                                <div>150K <span className="ml-5 inline-block">$219/Month</span></div>
                             </Tab>
                         </TabList>
                         <TabPanel className="50K-tab">
@@ -52,7 +52,7 @@ function FutureStandardProPriceTab() {
                     </Tabs>
                 </TabPanel>
 
-                <TabPanel className="pro-tab">
+                <TabPanel className="plus-tab">
                     <Tabs>
                         <TabList>
                             <Tab className="50k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
@@ -66,15 +66,15 @@ function FutureStandardProPriceTab() {
                             </Tab>
                         </TabList>
                         <TabPanel className="50K-tab">
-                            <FiftyPriceCard />
+                            <FiftyPriceCard fundedActivateFee={'None'} />
                             <PriceTableBtns hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" />
                         </TabPanel>
                         <TabPanel className="100K-tab">
-                            <HundredPriceCard />
+                            <HundredPriceCard fundedActivateFee={'None'} />
                             <PriceTableBtns hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
-                            <OneFiftyPriceCard />
+                            <OneFiftyPriceCard fundedActivateFee={'None'} />
                             <PriceTableBtns hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
                         </TabPanel>
                     </Tabs>

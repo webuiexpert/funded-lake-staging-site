@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Info } from "lucide-react";
 import PriceTableBtns from "../../../Components/PriceTableBtns";
 
-function HundredPriceCard() {
+function HundredPriceCard({fundedActivateFee}) {
    const [activeTooltip, setActiveTooltip] = useState(null);
 
   const handleTooltipToggle = (idx) => {
@@ -24,7 +24,7 @@ function HundredPriceCard() {
     { label: "Profit Target", value: "None", description: "Lorem ipsum -" },
     { label: "Max Loss Limit", value: "3000", description: "Lorem ipsum -" },
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
-    { label: "Activation Fee", value: "$120" }, // no description
+    { label: "Activation Fee", value: `${fundedActivateFee}` }, // no description
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
     { label: "News Trading", value: "No", description: "Lorem ipsum -" },
     { label: "Max Contract Size", value: "4 Minis", description: "Lorem ipsum -" },
