@@ -31,20 +31,20 @@ function FutureStandardProPriceTab() {
                             </Tab>
                         </TabList>
                         <TabPanel className="50K-tab">
-                            <FiftyPriceCard />
+                            <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
                             <PriceTableBtns
                                 hideHeading={true}
                                 getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291"
                             />
                         </TabPanel>
                         <TabPanel className="100K-tab">
-                            <HundredPriceCard />
+                            <HundredPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'}/>
                             <PriceTableBtns
                             hideHeading={true}
                             getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
-                            <OneFiftyPriceCard />
+                            <OneFiftyPriceCard evaluationActivateFee={'None'}  fundedActivateFee={'None'}/>
                             <PriceTableBtns
                             hideHeading={true}
                             getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
@@ -66,15 +66,15 @@ function FutureStandardProPriceTab() {
                             </Tab>
                         </TabList>
                         <TabPanel className="50K-tab">
-                            <FiftyPriceCard fundedActivateFee={'None'} />
+                            <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
                             <PriceTableBtns hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" />
                         </TabPanel>
                         <TabPanel className="100K-tab">
-                            <HundredPriceCard fundedActivateFee={'None'} />
+                            <HundredPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
                             <PriceTableBtns hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
-                            <OneFiftyPriceCard fundedActivateFee={'None'} />
+                            <OneFiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
                             <PriceTableBtns hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
                         </TabPanel>
                     </Tabs>

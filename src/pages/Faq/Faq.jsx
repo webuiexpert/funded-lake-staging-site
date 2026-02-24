@@ -123,59 +123,75 @@ function Faq() {
 
           <div className="faq-tabs max-w-6xl mx-auto px-4 lg:px-16 md:my-16 my-10 relative z-10 overflow-hidden">
             <Tabs>
-              <TabList className="text-start border-2 p-3 md:rounded-full rounded-2xl border-[#032070] justify-between flex md:flex-row flex-col items-center lg:gap-5 gap-4 text-black">
-                <Tab
-                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-xl"
-                  selectedClassName="bg-[#032070] text-white"
-                >
-                  One Step
+              <TabList className='w-fit mx-auto text-start border-2 font-semibold rounded-full border-[#032070] justify-between flex items-center lg:gap-5 gap-4 text-black lg:p-0 p-2'>
+                <Tab className="my-2 mx-2 uppercase lg:px-6 py-3 px-4 hover:bg-[#032070] duration-200 text-white hover:text-white rounded-full">
+                  Standard
                 </Tab>
-                <Tab
-                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
-                  selectedClassName="bg-[#032070] text-white"
-                >
-                  2-Step Standard
-                </Tab>
-                 <Tab
-                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
-                  selectedClassName="bg-[#032070] text-white"
-                >
-                  2-step Pro
-                </Tab>
-                <Tab
-                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
-                  selectedClassName="bg-[#032070] text-white"
-                >
-                  instant funding
-                </Tab>
-                <Tab
-                  className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
-                  selectedClassName="bg-[#032070] text-white"
-                >
-                  general questions
+                <Tab className="my-2 mx-2 uppercase lg:px-6 py-3 px-4 hover:bg-[#032070] duration-200 text-white hover:text-white rounded-full">
+                  Plus
                 </Tab>
               </TabList>
+              <TabPanel className="standard-tab mt-10">
+                <Tabs>
+                  <TabList className="text-start border-2 p-3 md:rounded-full rounded-2xl border-[#032070] justify-between flex md:flex-row flex-col items-center lg:gap-5 gap-4 text-black">
+                    <Tab
+                      className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-xl"
+                      selectedClassName="bg-[#032070] text-white"
+                    >
+                      One Step
+                    </Tab>
+                    <Tab
+                      className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
+                      selectedClassName="bg-[#032070] text-white"
+                    >
+                      2-Step Standard
+                    </Tab>
+                    <Tab
+                      className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
+                      selectedClassName="bg-[#032070] text-white"
+                    >
+                      2-step Pro
+                    </Tab>
+                    <Tab
+                      className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
+                      selectedClassName="bg-[#032070] text-white"
+                    >
+                      instant funding
+                    </Tab>
+                    <Tab
+                      className="px-5 py-2 uppercase text-center cursor-pointer hover:bg-[#032070] text-white w-fit flex items-center justify-center md:text-[16px] rounded-full font-bold text-lg"
+                      selectedClassName="bg-[#032070] text-white"
+                    >
+                      general questions
+                    </Tab>
+                  </TabList>
 
-              <TabPanel className="one-step text-start mt-10">
-                <StepOneFaq searchTerm={searchTerm} />
+                  <TabPanel className="one-step text-start mt-10">
+                    <StepOneFaq searchTerm={searchTerm} />
+                  </TabPanel>
+
+                  <TabPanel className="two-step text-start mt-10">
+                    <StepTwoFaq searchTerm={searchTerm} />
+                  </TabPanel>
+
+                  <TabPanel className="pro-ques text-start md:mt-10 mt-5">
+                    <TwoStepPro searchTerm={searchTerm} />
+                  </TabPanel>
+
+                  <TabPanel className="instant-funding text-start mt-10">
+                    <InstantFundingFaq searchTerm={searchTerm} />
+                  </TabPanel>
+
+                  <TabPanel className="general-ques text-start md:mt-10 mt-5">
+                    <GeneralQuestionFaq searchTerm={searchTerm} />
+                  </TabPanel>
+                </Tabs>
               </TabPanel>
-
-              <TabPanel className="two-step text-start mt-10">
-                <StepTwoFaq searchTerm={searchTerm} />
-              </TabPanel>
-
-               <TabPanel className="pro-ques text-start md:mt-10 mt-5">
-                <TwoStepPro searchTerm={searchTerm} />
-              </TabPanel>
-
-              <TabPanel className="instant-funding text-start mt-10">
-                <InstantFundingFaq searchTerm={searchTerm} />
-              </TabPanel>
-
-              <TabPanel className="general-ques text-start md:mt-10 mt-5">
-                <GeneralQuestionFaq searchTerm={searchTerm} />
+              <TabPanel className="plus-tab">
+                <h3>Pending</h3>
               </TabPanel>
             </Tabs>
+
           </div>
           <img className="saperator w-full" src={botSep} alt="" />
         </div>

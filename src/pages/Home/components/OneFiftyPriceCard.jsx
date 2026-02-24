@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Info } from "lucide-react";
 
-function OneFiftyPriceCard({fundedActivateFee}) {
+function OneFiftyPriceCard({evaluationActivateFee, fundedActivateFee}) {
    const [activeTooltip, setActiveTooltip] = useState(null);
 
   const handleTooltipToggle = (idx) => {
@@ -12,7 +12,7 @@ function OneFiftyPriceCard({fundedActivateFee}) {
     { label: "Profit Target", value: "9000", description: "Lorem ipsum -" },
     { label: "Max Loss Limit", value: "4500", description: "Lorem ipsum -" },
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
-    { label: "Activation Fee", value: "None" }, // no description
+    { label: "Activation Fee", value: `${evaluationActivateFee}` },
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
     { label: "News Trading", value: "Yes", description: "Lorem ipsum -" },
     { label: "Max Contract Size", value: "10 Minis", description: "Lorem ipsum -" },

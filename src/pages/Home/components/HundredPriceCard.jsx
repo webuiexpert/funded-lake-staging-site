@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Info } from "lucide-react";
-import PriceTableBtns from "../../../Components/PriceTableBtns";
 
-function HundredPriceCard({fundedActivateFee}) {
+function HundredPriceCard({evaluationActivateFee, fundedActivateFee}) {
    const [activeTooltip, setActiveTooltip] = useState(null);
 
   const handleTooltipToggle = (idx) => {
@@ -13,7 +12,7 @@ function HundredPriceCard({fundedActivateFee}) {
     { label: "Profit Target", value: "6000", description: "Lorem ipsum -" },
     { label: "Max Loss Limit", value: "3000", description: "Lorem ipsum -" },
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
-    { label: "Activation Fee", value: "None" }, // no description
+    { label: "Activation Fee", value: `${evaluationActivateFee}` },
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
     { label: "News Trading", value: "Yes", description: "Lorem ipsum -" },
     { label: "Max Contract Size", value: "8 Minis", description: "Lorem ipsum -" },
@@ -24,7 +23,7 @@ function HundredPriceCard({fundedActivateFee}) {
     { label: "Profit Target", value: "None", description: "Lorem ipsum -" },
     { label: "Max Loss Limit", value: "3000", description: "Lorem ipsum -" },
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
-    { label: "Activation Fee", value: `${fundedActivateFee}` }, // no description
+    { label: "Activation Fee", value: `${fundedActivateFee}`},
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
     { label: "News Trading", value: "No", description: "Lorem ipsum -" },
     { label: "Max Contract Size", value: "4 Minis", description: "Lorem ipsum -" },

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Info } from "lucide-react";
 
-function FiftyPriceCard({fundedActivateFee}) {
+function FiftyPriceCard({evaluationActivateFee, fundedActivateFee}) {
    const [activeTooltip, setActiveTooltip] = useState(null);
 
   const handleTooltipToggle = (idx) => {
@@ -12,7 +12,7 @@ function FiftyPriceCard({fundedActivateFee}) {
     { label: "Profit Target", value: "3000", description: "Lorem ipsum -" },
     { label: "Max Loss Limit", value: "2000", description: "Lorem ipsum -" },
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
-    { label: "Activation Fee", value: "None" }, // no description
+    { label: "Activation Fee", value: `${evaluationActivateFee}` },
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
     { label: "News Trading", value: "Yes", description: "Lorem ipsum -" },
     { label: "Max Contract Size", value: "4 Minis", description: "Lorem ipsum -" },
@@ -23,7 +23,7 @@ function FiftyPriceCard({fundedActivateFee}) {
     { label: "Profit Target", value: "None", description: "Lorem ipsum -" },
     { label: "Max Loss Limit", value: "2000", description: "Lorem ipsum -" },
     { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
-    { label: "Activation Fee", value: `${fundedActivateFee}` }, // no description
+    { label: "Activation Fee", value: `${fundedActivateFee}` },
     { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
     { label: "News Trading", value: "No", description: "Lorem ipsum -" },
     { label: "Max Contract Size", value: "2 Minis", description: "Lorem ipsum -" },
