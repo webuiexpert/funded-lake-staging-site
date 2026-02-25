@@ -14,6 +14,7 @@ import coineCubeIcon from "/assets/bicon-icons-bg-right.png";
 import walletIcon from "/assets/shape_wallet.png";
 import lockerIcon from "/assets/shape_locker.png";
 import TwoStepPro from "./components/TwoStepPro";
+import FutureFaqLists from "./components/FutureFaqLists";
 
 function Faq() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -125,10 +126,10 @@ function Faq() {
             <Tabs>
               <TabList className='w-fit mx-auto text-start border-2 font-semibold rounded-full border-[#032070] justify-between flex items-center lg:gap-5 gap-4 text-black lg:p-0 p-2'>
                 <Tab className="my-2 mx-2 uppercase lg:px-6 py-3 px-4 hover:bg-[#032070] duration-200 text-white hover:text-white rounded-full">
-                  Standard
+                  Forex
                 </Tab>
                 <Tab className="my-2 mx-2 uppercase lg:px-6 py-3 px-4 hover:bg-[#032070] duration-200 text-white hover:text-white rounded-full">
-                  Plus
+                  Futures
                 </Tab>
               </TabList>
               <TabPanel className="standard-tab mt-10">
@@ -188,7 +189,7 @@ function Faq() {
                 </Tabs>
               </TabPanel>
               <TabPanel className="plus-tab">
-                <h3>Pending</h3>
+                <FutureFaqLists searchTerm={searchTerm} />
               </TabPanel>
             </Tabs>
 

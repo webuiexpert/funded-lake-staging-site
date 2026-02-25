@@ -31,20 +31,20 @@ function FutureStandardProPriceTab() {
                             </Tab>
                         </TabList>
                         <TabPanel className="50K-tab">
-                            <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
+                            <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'} />
                             <PriceTableBtns
                                 hideHeading={true}
                                 getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291"
                             />
                         </TabPanel>
                         <TabPanel className="100K-tab">
-                            <HundredPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'}/>
+                            <HundredPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'}/>
                             <PriceTableBtns
                             hideHeading={true}
                             getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
-                            <OneFiftyPriceCard evaluationActivateFee={'None'}  fundedActivateFee={'None'}/>
+                            <OneFiftyPriceCard evaluationActivateFee={'None'}  fundedActivateFee={'$120'}/>
                             <PriceTableBtns
                             hideHeading={true}
                             getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
