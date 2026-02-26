@@ -19,17 +19,18 @@ function FutureStandardProPriceTab() {
                 </TabList>
                 <TabPanel className="standard-tab mt-10">
                     <Tabs>
-                        <TabList>
+                         <TabList>
                             <Tab className="50k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>50K <span className="ml-5 inline-block">$129/Month</span></div>
+                                <div>50K <span className="ml-5 inline-block">$119/Month</span></div>
                             </Tab>
                             <Tab className="100k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>100K <span className="ml-5 inline-block">$179/Month</span></div>
+                                <div>100K <span className="ml-5 inline-block">$159/Month</span></div>
                             </Tab>
                             <Tab className="150k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>150K <span className="ml-5 inline-block">$219/Month</span></div>
+                                <div>150K <span className="ml-5 inline-block">$199/Month</span></div>
                             </Tab>
                         </TabList>
+                       
                         <TabPanel className="50K-tab">
                             <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'} />
                             <PriceTableBtns
@@ -56,13 +57,13 @@ function FutureStandardProPriceTab() {
                     <Tabs>
                         <TabList>
                             <Tab className="50k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>50K <span className="ml-5 inline-block">$119/Month</span></div>
+                                <div>50K <span className="ml-5 inline-block">$129/Month</span></div>
                             </Tab>
                             <Tab className="100k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>100K <span className="ml-5 inline-block">$159/Month</span></div>
+                                <div>100K <span className="ml-5 inline-block">$179/Month</span></div>
                             </Tab>
                             <Tab className="150k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
-                                <div>150K <span className="ml-5 inline-block">$199/Month</span></div>
+                                <div>150K <span className="ml-5 inline-block">$219/Month</span></div>
                             </Tab>
                         </TabList>
                         <TabPanel className="50K-tab">
