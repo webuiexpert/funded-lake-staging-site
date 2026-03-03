@@ -9,25 +9,25 @@ function FiftyPriceCard({evaluationActivateFee, fundedActivateFee}) {
   };
 
   const evaluationSteps = [
-    { label: "Profit Target", value: "3000", description: "Lorem ipsum -" },
-    { label: "Max Loss Limit", value: "2000", description: "Lorem ipsum -" },
-    { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
+    { label: "Profit Target", value: "3000", description: "The profit target needed to pass the eval" },
+    { label: "Max Loss Limit", value: "2000", description: "EOD trailing drawdown" },
+    { label: "Daily Loss", value: `${evaluationActivateFee}` },
     { label: "Activation Fee", value: `${evaluationActivateFee}` },
-    { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
-    { label: "News Trading", value: "Yes", description: "Lorem ipsum -" },
-    { label: "Max Contract Size", value: "4 Minis", description: "Lorem ipsum -" },
-    { label: "Profit Split", value: "-", description: "Lorem ipsum -" },
+    { label: "Consistency Rule", value: "40%", description: "Your best day can not be greater than 40% of the profits made"},
+    { label: "News Trading", value: `${evaluationActivateFee}`},
+    { label: "Max Contract Size", value: "4 Minis", description: "" },
+    { label: "Profit Split", value: "None", description: "" },
   ];
 
   const fundedSteps = [
-    { label: "Profit Target", value: "None", description: "Lorem ipsum -" },
-    { label: "Max Loss Limit", value: "2000", description: "Lorem ipsum -" },
-    { label: "Daily Loss", value: "None", description: "Lorem ipsum -" },
+    { label: "Profit Target", value: "None", description: "The profit target needed to pass the eval" },
+    { label: "Max Loss Limit", value: "2000", description: "EOD trailing drawdown" },
+    { label: "Daily Loss", value: `${evaluationActivateFee}`},
     { label: "Activation Fee", value: `${fundedActivateFee}` },
-    { label: "Consistency Rule", value: "40%", description: "Lorem ipsum -"},
-    { label: "News Trading", value: "No", description: "Lorem ipsum -" },
-    { label: "Max Contract Size", value: "2 Minis", description: "Lorem ipsum -" },
-    { label: "Profit Split", value: "80%", description: "Lorem ipsum -" },
+    { label: "Consistency Rule", value: "40%", description: "Your best day can not be greater than 40% of the profits made"},
+    { label: "News Trading", value: "None", description: "" },
+    { label: "Max Contract Size", value: "2 Minis", description: "" },
+    { label: "Profit Split", value: "80%", description: "" },
   ];
 
   const renderStepList = (steps, offset = 0) =>
