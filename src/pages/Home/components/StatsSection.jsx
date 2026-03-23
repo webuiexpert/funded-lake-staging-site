@@ -17,7 +17,7 @@ const stats = [
   },
   {
     label: "In payouts processed",
-    value: 225,
+    value: 300,
     suffix: "K+",
   },
 ];
