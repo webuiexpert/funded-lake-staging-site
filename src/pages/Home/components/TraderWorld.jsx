@@ -45,8 +45,8 @@ function TraderWorld() {
             transition={{ duration: 1, ease: "easeInOut" }}
             viewport={{ once: true, amount: 0.4 }}
           >
-            <span className="text-white">enabling, </span>traders <br />
-            <span className="text-white">around the, </span>world
+            <span className="text-white">enabling </span>traders <br />
+            <span className="text-white">around the </span>world
           </motion.h2>
         </div>
 
