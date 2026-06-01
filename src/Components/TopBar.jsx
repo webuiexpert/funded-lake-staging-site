@@ -15,10 +15,10 @@ function TopBar() {
         aria-label="Close promo" />
       <div className="flex items-center gap-4 text-white text-center md:flex-row flex-col relative py-3">
         <p className="text-[14px] md:text-xl lg:text-xl font-medium max-w-[350px] md:max-w-none">
-          Use BLOOM40 for 40% OFF all challenges 
+          Use code LEBANON20 for 20% OFF ALL  programs 
         </p>
-        <div onClick={() => navigator.clipboard.writeText("BLOOM40")}>
-            <CopyCouponButton couponCode="BLOOM40" />
+        <div onClick={() => navigator.clipboard.writeText("LEBANON20")}>
+            <CopyCouponButton couponCode="LEBANON20" />
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ function CopyCouponButton({couponCode}) {
 const StyledWrapper = styled.div`
   button {
     background-color: #f2f7fa;
-    width: 100px;
+    width: 150px;
     height: 33px;
     border: none;
     border-radius: 10px;

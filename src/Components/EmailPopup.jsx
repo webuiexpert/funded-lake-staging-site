@@ -117,10 +117,10 @@ function EmailPopup() {
               />
               <div className="flex md:items-start items-center gap-4 text-white text-left  flex-col relative">
                 <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none">
-                  Use BLOOM40 for 40% OFF all challenges
+                  Use code LEBANON20 for 20% OFF ALL  programs
                 </p>
-                <div onClick={() => navigator.clipboard.writeText("BLOOM40")}>
-                  <CopyCouponButton couponCode="BLOOM40" />
+                <div onClick={() => navigator.clipboard.writeText("LEBANON20")}>
+                  <CopyCouponButton couponCode="LEBANON20" />
                 </div>
               </div>
             </div>
