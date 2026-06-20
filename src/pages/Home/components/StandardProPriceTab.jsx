@@ -48,31 +48,31 @@ function StandardProPriceTab() {
                         </TabList>
                         <TabPanel className="5K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$35" newAmount="21$" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=291" />
                         </TabPanel>
                         <TabPanel className="10K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$70" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$70" newAmount="42$" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="25K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$175" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$175" newAmount="105$" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
                         </TabPanel>
                         <TabPanel className="50K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$350" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=294" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$350" newAmount="210$" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=294" />
                         </TabPanel>
                         <TabPanel className="100K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$700" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=295" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$700" newAmount="420$" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=295" />
                         </TabPanel>
                         <TabPanel className="250K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$1750" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=296" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$1750" newAmount="1050$" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=296" />
                         </TabPanel>
                         <TabPanel className="400K">
                             <TwoStepPriceCard />
-                            <PriceTableBtns dollarAmount="$2800" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=297" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$2800" newAmount="1680$" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=297" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
@@ -107,31 +107,31 @@ function StandardProPriceTab() {
                         </TabList>
                         <TabPanel className="5K">
                             <TwoStepsProCrad />
-                            <PriceTableBtns dollarAmount="$25" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=291" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$25" newAmount="15$" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=291" />
                         </TabPanel>
                         <TabPanel className="10K">
                             <TwoStepsProCrad />
-                            <PriceTableBtns dollarAmount="$50" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=292" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$50" newAmount="30$" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=292" />
                         </TabPanel>
                         <TabPanel className="25K">
                             <TwoStepsProCrad />
-                            <PriceTableBtns dollarAmount="$125" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$125" newAmount="75$" accountAmt="25K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=293" />
                         </TabPanel>
                         <TabPanel className="50K">
                             <TwoStepsProCrad />
-                            <PriceTableBtns dollarAmount="$225" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=294" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$225" newAmount="135$" accountAmt="50K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=294" />
                         </TabPanel>
                         <TabPanel className="100K">
                             <TwoStepsProCrad />
-                            <PriceTableBtns dollarAmount="$450" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=295" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$450" newAmount="270$" accountAmt="100K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=295" />
                         </TabPanel>
                         <TabPanel className="250K">
                             <TwoStepsProCrad />
-                            <PriceTableBtns dollarAmount="$1250" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=296" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$1250" newAmount="750$" accountAmt="250K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=296" />
                         </TabPanel>
                         <TabPanel className="400K">
                             <TwoStepsProCrad />
-                            <PriceTableBtns dollarAmount="$2200" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=297" />
+                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" oldAmount="$2200" newAmount="1320$" accountAmt="400K" getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=297" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
