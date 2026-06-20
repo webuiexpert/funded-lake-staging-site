@@ -28,7 +28,7 @@ function HeroSection() {
       />
       <div className="text-center relative z-10 md:mt-16 mt-16">
         <motion.h1
-          className="text-white font-bold text-xl  md:text-5xl lg:text-[80px] leading-tight"
+          className="text-white font-bold text-xl  md:text-3xl lg:text-[42px] leading-tight"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1.1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -38,7 +38,7 @@ function HeroSection() {
           <br />
           <span className="text-[var(--primary-color)]">EMPOWER </span>TRADERS
         </motion.h1>
-        <p className="text-white text-sm  md:text-xl lg:text-2xl max-w-4xl mt-6 font-medium mx-auto">
+        <p className="text-white text-sm  md:text-xl lg:text-xl max-w-3xl mt-6 font-medium mx-auto">
           “Lightning-fast payouts, instant funding, no hidden rules or
           consistency requirements - take on challenges with up to $400,000 in
           capital!”
