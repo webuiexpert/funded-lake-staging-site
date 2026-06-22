@@ -96,6 +96,17 @@ function FutureFaqLists({ searchTerm }) {
                 </div>
             ),
         },
+        {
+            question:
+                " Is news trading allowed?",
+            answer: (
+                <div className="space-y-4 text-white text-[16px] text-left leading-relaxed">
+                    <p>
+                        During the evaluation phase news trading is allowed. However during the funded phase there is a 3 minute window bracket before and after red folder news. No trades should be opened or close during that window.
+                    </p>
+                </div>
+            ),
+        },
     ];
 
     const filteredFaqs = faqs.filter(faq =>
