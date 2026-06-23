@@ -22,7 +22,7 @@ function PrimaryButton({ text, link }) {
           </span>
 
           {/* Text */}
-          <span className="md:text-[14px] text-[14px] capitalize relative z-20 text-md text-center font-semibold tracking-wide">
+          <span className="md:text-[14px] text-[12px] capitalize relative z-20 text-center font-semibold tracking-wide">
             {text}
           </span>
 

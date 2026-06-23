@@ -54,32 +54,38 @@ function EmailPopup() {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/90 z-[9999] flex items-center justify-center"
+    <div className="fixed inset-0 bg-black/90 z-[9999] flex md:items-center items-start justify-center"
     onClick={() => setShow(null)}
 >
-      <div className="email-popup-col relative bg-white text-white w-full overflow-y-auto lg:max-w-4xl px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800"
+      <div className="email-popup-col max-h-[520px] md:max-h-auto md:overflow-y-auto   overflow-y-scroll relative bg-white text-white lg:max-w-4xl md:max-w-3xl max-w-[90%] lg:mt-0 mt-24 px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 "
       onClick={(e) => e.stopPropagation()}
 >
         {/* ❌ Close Button */}
         <button
-          className="absolute top-3 right-3 text-white text-4xl font-bold cursor-pointer"
+          className="fixed top-3 right-3 text-white text-4xl font-bold cursor-pointer"
           onClick={() => setShow(false)}
         >
           <X className="bg-primary rounded-full p-1 md:size-7 size-6" />
         </button>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 items-start">
-          <img
-            className="border-2 md:w-full w-[60%] md:mx-0 mx-auto rounded-lg"
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 items-start">        
+          <div className="popupImg flex flex-col md:items-center items-center justify-center gap-6">
+              <img
+            className="border-2 md:w-[60%] w-[100%] md:mx-0 mx-auto rounded-lg"
             src={popupImg100}
             alt="Popup Giveaway"
           />
+              <PrimaryButton
+                text="JOIN OUR DISCORD"
+                link="https://discord.gg/vDSnjmxndy"
+              />
+          </div>
 
           <div className="popupContent text-start flex flex-col justify-around">
-            <h3 className="font-semibold md:text-[24px] text-[20px] text-center md:text-left">
+            <h3 className="font-semibold md:text-[24px] text-[18px] text-center md:text-left">
               ⚡ WIN A FREE 100k 2-STEP CHALLENGE GIVEAWAY ⚡
             </h3>
-            <p className="md:text-[18px] mt-4 text-center md:text-left">
+            <p className="md:text-[16px] text-[14px] mt-4 text-center md:text-left">
               Enter your email and join our Discord for a chance to win a 100k
               2-Step challenge account. Winner will be announced on Discord!
             </p>
@@ -111,10 +117,7 @@ function EmailPopup() {
 
             {/* ✅ Action Buttons */}
             <div className="contact-btns md:gap-5 gap-4 flex flex-col justify-start md:items-start lg:mt-0 mt-2">
-              <PrimaryButton
-                text="JOIN OUR DISCORD"
-                link="https://discord.gg/vDSnjmxndy"
-              />
+            
               <div className="flex md:items-start items-center gap-4 text-white text-left  flex-col relative">
                 <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none">
                   Use code <strong>GOAL25</strong> for 25% OFF Instant Funding
