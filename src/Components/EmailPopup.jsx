@@ -119,7 +119,7 @@ function EmailPopup() {
             <div className="contact-btns md:gap-5 gap-4 flex flex-col justify-start md:items-start lg:mt-0 mt-2">
             
               <div className="flex md:items-start items-center gap-4 text-white text-left  flex-col relative">
-                <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none">
+                <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none md:text-left text-center">
                   Use code <strong>GOAL25</strong> for 25% OFF Instant Funding
                 </p>
                 <div onClick={() => navigator.clipboard.writeText("GOAL25")}>
@@ -127,7 +127,7 @@ function EmailPopup() {
                 </div>
 
 
-                <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none">
+                <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none md:text-left text-center">
                   Use code <strong>GOAL40</strong> for 40% OFF All challenges
                 </p>
                 <div onClick={() => navigator.clipboard.writeText("GOAL40")}>
