@@ -26,7 +26,7 @@ function PriceTableBtns({ oldAmount, newAmount, accountAmt, getFundedLink, hideH
       {/* Hide Heading Conditionally */}
       {!hideHeading && (
         <h3 className="text-center lg:text-6xl md:text-4xl text-[32px] font-bold text-[var(--primary-color)]">
-          <span className="text-gray-500 line-through ">{oldAmount}</span> for <span>{newAmount}</span>
+          <span className="text-gray-500 line-through ">{oldAmount}</span> <span>{newAmount}</span> for
           <span className="text-white"> {accountAmt} </span> Account
         </h3>
       )}
