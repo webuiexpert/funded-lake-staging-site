@@ -22,7 +22,7 @@ function HundredPriceCard({evaluationActivateFee, fundedActivateFee}) {
   const fundedSteps = [
     { label: "Profit Target", value: "None", description: "The profit target needed to pass the eval" },
     { label: "Max Loss Limit", value: "3000", description: "EOD trailing drawdown" },
-    { label: "Daily Loss", value: `${fundedActivateFee}`},
+    { label: "Daily Loss", value: "None"},
     { label: "Activation Fee", value: `${fundedActivateFee}`},
     { label: "Consistency Rule", value: "40%", description: "Your best day can not be greater than 40% of the profits made"},
     { label: "News Trading", value: "No", description: "" },
