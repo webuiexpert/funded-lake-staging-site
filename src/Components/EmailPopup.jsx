@@ -1,9 +1,31 @@
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { X, Copy, Check, Zap } from "lucide-react";
 import popupImg100 from "/assets/popupImg-100k.png";
-import PrimaryButton from "./PrimaryButton";
-import CopyCouponButton from "./CopyCouponButton";
 import axios from "axios";
+
+function CouponButton({ code }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <button
+      onClick={handleCopy}
+      className="flex items-center gap-2 border border-dashed border-yellow-400 text-yellow-400 hover:bg-yellow-400/10 transition-colors rounded-lg px-4 py-2 text-sm font-semibold tracking-widest w-full justify-between"
+    >
+      <span>{code}</span>
+      {copied ? (
+        <Check size={15} className="text-green-400" />
+      ) : (
+        <Copy size={15} />
+      )}
+    </button>
+  );
+}
 
 function EmailPopup() {
   const [show, setShow] = useState(false);
@@ -11,18 +33,14 @@ function EmailPopup() {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Show popup after small delay
   useEffect(() => {
     const timer = setTimeout(() => setShow(true), 500);
     return () => clearTimeout(timer);
   }, []);
 
-  // Prevent body scroll when popup is open
   useEffect(() => {
-    document.body.style.overflow = show ? "hidden" : "auto";
-    return () => {
-      document.body.style.overflow = "auto";
-    };
+    document.body.style.overflow = show ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
   }, [show]);
 
   if (!show) return null;
@@ -31,108 +49,141 @@ function EmailPopup() {
     e.preventDefault();
     setLoading(true);
     setMessage("");
-
     try {
-      // Use your actual domain URL
-      const response = await axios.post('https://fundedlake.com/api/subscribe.php', {
-        email
-      });
-
+      const response = await axios.post("https://fundedlake.com/api/subscribe.php", { email });
       if (response.data.success) {
         setEmail("");
-        setMessage("🎉 Subscription successful! Check your inbox.");
+        setMessage({ type: "success", text: "Subscription successful! Check your inbox." });
       } else {
         setEmail("");
-        setMessage("❌ Error: " + response.data.message);
+        setMessage({ type: "error", text: response.data.message || "Something went wrong." });
       }
     } catch (error) {
       setEmail("");
-      setMessage("❌ Error: " + (error.response?.data?.message || "Failed to subscribe"));
+      setMessage({ type: "error", text: error.response?.data?.message || "Failed to subscribe." });
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="fixed inset-0 bg-black/90 z-[9999] flex md:items-center items-start justify-center"
-    onClick={() => setShow(null)}
->
-      <div className="email-popup-col max-h-[520px] md:max-h-auto md:overflow-y-auto   overflow-y-scroll relative bg-white text-white lg:max-w-4xl md:max-w-3xl max-w-[90%] lg:mt-0 mt-24 px-4 py-6 lg:py-8 md:px-6 rounded-lg shadow-lg text-center scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 "
-      onClick={(e) => e.stopPropagation()}
->
-        {/* ❌ Close Button */}
+    <div
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
+      style={{ background: "rgba(0,0,0,0.85)" }}
+      onClick={() => setShow(false)}
+    >
+      <div
+        className="relative w-full max-w-3xl rounded-2xl overflow-hidden shadow-2xl"
+        style={{ background: "#111113", maxHeight: "calc(100vh - 2rem)" }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close Button — top-right of popup */}
         <button
-          className="fixed top-3 right-3 text-white text-4xl font-bold cursor-pointer"
           onClick={() => setShow(false)}
+          aria-label="Close popup"
+          className="absolute top-3 right-3 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          style={{ width: 32, height: 32 }}
         >
-          <X className="bg-primary rounded-full p-1 md:size-7 size-6" />
+          <X size={16} color="white" />
         </button>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-6 items-start">        
-          <div className="popupImg flex flex-col md:items-center items-center justify-center gap-6">
-              <img
-            className="border-2 md:w-[60%] w-[100%] md:mx-0 mx-auto rounded-lg"
-            src={popupImg100}
-            alt="Popup Giveaway"
-          />
-              <PrimaryButton
-                text="JOIN OUR DISCORD"
-                link="https://discord.gg/vDSnjmxndy"
-              />
+        <div className="flex flex-col md:flex-row overflow-y-auto" style={{ maxHeight: "calc(100vh - 2rem)" }}>
+          {/* Left — Image panel */}
+          <div
+            className="flex flex-col items-center justify-center gap-5 p-6 md:p-8 md:w-[42%] shrink-0"
+            style={{ background: "#0e0e10", borderRight: "1px solid rgba(255,255,255,0.07)" }}
+          >
+            <img
+              src={popupImg100}
+              alt="100k Giveaway"
+              className="rounded-xl w-full max-w-[220px] md:max-w-full object-cover"
+              style={{ border: "1px solid rgba(255,255,255,0.1)" }}
+            />
+            <a
+              href="https://discord.gg/vDSnjmxndy"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 font-semibold text-sm rounded-xl px-5 py-3 w-full justify-center transition-all hover:brightness-110 active:scale-95"
+              style={{ background: "#5865F2", color: "#fff" }}
+            >
+              {/* Discord icon via SVG */}
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057.102 18.08.114 18.1.135 18.115a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+              </svg>
+              JOIN OUR DISCORD
+            </a>
           </div>
 
-          <div className="popupContent text-start flex flex-col justify-around">
-            <h3 className="font-semibold md:text-[24px] text-[18px] text-center md:text-left">
-              ⚡ WIN A FREE 100k 2-STEP CHALLENGE GIVEAWAY ⚡
-            </h3>
-            <p className="md:text-[16px] text-[14px] mt-4 text-center md:text-left">
-              Enter your email and join our Discord for a chance to win a 100k
-              2-Step challenge account. Winner will be announced on Discord!
-            </p>
+          {/* Right — Content panel */}
+          <div className="flex flex-col justify-center gap-5 p-6 md:p-8 flex-1">
+            {/* Heading */}
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <Zap size={16} className="text-yellow-400" fill="currentColor" aria-hidden="true" />
+                <span className="text-yellow-400 text-xs font-bold tracking-widest uppercase">Giveaway</span>
+              </div>
+              <h2 className="text-white font-bold text-xl md:text-2xl leading-snug">
+                Win a FREE 100k 2-Step Challenge
+              </h2>
+              <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+                Enter your email and join our Discord for a chance to win a 100k 2-Step challenge account. Winner announced on Discord!
+              </p>
+            </div>
 
-            {/* ✅ Subscription Form */}
-            <form className="mt-5 mb-6" onSubmit={handleSubmit}>
-              <div className="flex gap-3 border p-1 rounded-[10px] bg-[#2a2a2a]">
+            {/* Email form */}
+            <form onSubmit={handleSubmit}>
+              <div
+                className="flex rounded-xl overflow-hidden"
+                style={{ border: "1px solid rgba(255,255,255,0.12)", background: "#1a1a1d" }}
+              >
                 <input
-                  className="w-full px-2 bg-transparent text-white focus:outline-0 placeholder-gray-400"
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  className="flex-1 bg-transparent text-white text-sm px-4 py-3 focus:outline-none placeholder-gray-500"
                 />
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-[var(--primary-color)] px-4 py-2 rounded-md cursor-pointer disabled:opacity-70"
+                  className="shrink-0 px-5 py-3 text-sm font-semibold transition-all hover:brightness-110 active:scale-95 disabled:opacity-60"
+                  style={{ background: "var(--primary-color, #e8a020)", color: "#000" }}
                 >
-                  {loading ? "Submitting..." : "Subscribe"}
+                  {loading ? "..." : "Subscribe"}
                 </button>
               </div>
+
+              {message && (
+                <p
+                  className="mt-2 text-xs px-1"
+                  style={{ color: message.type === "success" ? "#4ade80" : "#f87171" }}
+                >
+                  {message.type === "success" ? "🎉" : "❌"} {message.text}
+                </p>
+              )}
             </form>
 
-            {message && (
-              <p className="text-center my-2 text-sm text-gray-300">{message}</p>
-            )}
+            {/* Divider */}
+            <div className="flex items-center gap-3">
+              <div className="flex-1 h-px" style={{ background: "rgba(255,255,255,0.08)" }} />
+              <span className="text-gray-500 text-xs">exclusive discounts</span>
+              <div className="flex-1 h-px" style={{ background: "rgba(255,255,255,0.08)" }} />
+            </div>
 
-            {/* ✅ Action Buttons */}
-            <div className="contact-btns md:gap-5 gap-4 flex flex-col justify-start md:items-start lg:mt-0 mt-2">
-            
-              <div className="flex md:items-start items-center gap-4 text-white text-left  flex-col relative">
-                <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none md:text-left text-center">
-                  Use code <strong>GOAL25</strong> for 25% OFF Instant Funding
+            {/* Coupons */}
+            <div className="flex flex-col gap-3">
+              <div>
+                <p className="text-gray-400 text-xs mb-1.5">
+                  25% OFF Instant Funding
                 </p>
-                <div onClick={() => navigator.clipboard.writeText("GOAL25")}>
-                  <CopyCouponButton couponCode="GOAL25" />
-                </div>
-
-
-                <p className="text-[14px] md:text-sm font-medium max-w-[350px] md:max-w-none md:text-left text-center">
-                  Use code <strong>GOAL40</strong> for 40% OFF All challenges
+                <CouponButton code="GOAL25" />
+              </div>
+              <div>
+                <p className="text-gray-400 text-xs mb-1.5">
+                  40% OFF All Challenges
                 </p>
-                <div onClick={() => navigator.clipboard.writeText("GOAL40")}>
-                  <CopyCouponButton couponCode="GOAL40" />
-                </div>
+                <CouponButton code="GOAL40" />
               </div>
             </div>
           </div>
