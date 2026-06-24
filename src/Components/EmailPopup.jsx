@@ -122,7 +122,7 @@ function EmailPopup() {
                 <Zap size={16} className="text-yellow-400" fill="currentColor" aria-hidden="true" />
                 <span className="text-yellow-400 text-xs font-bold tracking-widest uppercase">Giveaway</span>
               </div>
-              <h3 className="text-[#00c4f4] uppercase font-bold text-xl md:text-2xl lg:text-3xl leading-snug">
+              <h3 className="text-[#00c4f4] uppercase lg:max-w-[310px] font-bold text-xl md:text-2xl lg:text-3xl leading-snug">
                 Win a FREE 100k 2-Step Challenge
               </h3>
               <p className="text-gray-400 text-sm mt-2 leading-relaxed">
