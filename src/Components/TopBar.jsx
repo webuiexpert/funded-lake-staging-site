@@ -17,15 +17,15 @@ function TopBar() {
 
   <div className="flex items-center gap-4 justify-center">
     <p className="text-[14px] md:text-xl lg:text-xl font-medium">
-      Use code <strong>GOAL25</strong> for 25% OFF Instant Funding
+      Use code <strong>FL20</strong> for 20% OFF ALL programs
     </p>
 
-    <div onClick={() => navigator.clipboard.writeText("GOAL25")}>
-      <CopyCouponButton couponCode="GOAL25" />
+    <div onClick={() => navigator.clipboard.writeText("FL20")}>
+      <CopyCouponButton couponCode="FL20" />
     </div>
   </div>
 
-  <div className="flex items-center gap-4 justify-center">
+  {/* <div className="flex items-center gap-4 justify-center">
     <p className="text-[14px] md:text-xl lg:text-xl font-medium">
       Use code <strong>GOAL40</strong> for 40% OFF All challenges
     </p>
@@ -33,7 +33,7 @@ function TopBar() {
     <div onClick={() => navigator.clipboard.writeText("GOAL40")}>
       <CopyCouponButton couponCode="GOAL40" />
     </div>
-  </div>
+  </div> */}
 
 </div>
     </div>

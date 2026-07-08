@@ -191,16 +191,16 @@ function EmailPopup() {
             <div className="flex flex-col gap-3">
               <div>
                 <p className="text-gray-400 text-xs mb-1.5">
-                  25% OFF Instant Funding
+                  Use CODE: FL20 for 20% OFF ALL Programs
                 </p>
-                <CouponButton code="GOAL25" />
+                <CouponButton code="FL20" />
               </div>
-              <div>
+              {/* <div>
                 <p className="text-gray-400 text-xs mb-1.5">
                   40% OFF All Challenges
                 </p>
                 <CouponButton code="GOAL40" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
