@@ -44,7 +44,7 @@ function PriceTab() {
             Standards, customized and refined to cater to every trading style.
           </p>
         </div>
-        <div>
+        <div id="forex-cfd">
           <Tabs>
             <TabList className="priceTabU-01 overflow-hidden bg-[#000b1f] w-full">
               <Tab className="cursor-pointer md:px-6 md:py-3 py-2 px-4 bg-dark mx-0 hover:bg-[#032070] duration-200 text-white font-bold rounded-full">

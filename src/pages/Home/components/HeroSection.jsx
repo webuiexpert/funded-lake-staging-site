@@ -56,6 +56,7 @@ function HeroSection() {
        <div className="lg:hidden">
           <PrimaryButton text="Signup" link="https://fundedlakedashboard.propaccount.com/en/sign-up" />
        </div>
+        <a href="#forex-cfd" className="text-white lg:text-lg text-md font-medium underline inline-flex items-center gap-2 justify-center">Check Our Programs </a>
        </div>
       </div>
       <div className="relative z-20">
