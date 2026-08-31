@@ -10,8 +10,8 @@ function OneStepPriceCard() {
 
   const evaluationSteps = [
     { label: "Profit Target", value: "10%", description: "10% Target of initial balance" },
-    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
-    { label: "Max Drawdown", value: "6%", description: "Equity-based, does not trail (Hard Breach)" },
+    { label: "Daily Loss Limit", value: "5%", description: "Based on the greater of end of day balance or EOD equity" },
+    { label: "Max Drawdown", value: "6%", description: "Static based  to the inital balance(does not trail)" },
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50" }, // no description
     { label: "Minimum Trading Days", value: "None", description: "No minimum trading days"},
@@ -22,8 +22,8 @@ function OneStepPriceCard() {
 
   const fundedSteps = [
     { label: "Profit Target", value: "-", description: "Funded account has no profit limit" },
-    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
-    { label: "Max Drawdown", value: "6%", description: "Equity-based, does not trail (Hard Breach)" },
+    { label: "Daily Loss Limit", value: "5%", description: "Based on the greater of end of day balance or EOD equity" },
+    { label: "Max Drawdown", value: "6%", description: "Static based  to the inital balance(does not trail)" },
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50" }, // no description
     { label: "Minimum Trading Days", value: "None", description: "No minimum trading days"},

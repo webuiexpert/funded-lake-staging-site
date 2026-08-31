@@ -6,7 +6,7 @@ import phaseBgBlueImg from "/assets/blue-bg-light.png";
 function TwoStepsProCrad() {
   const onephase = [
     { label: "Profit Target", value: "8%", description: "8% target of initial balance"},
-    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
+    { label: "Daily Loss Limit", value: "5%", description: "Based on the greater of end of day balance or EOD equity" },
     { label: "Max Drawdown", value: "7%", description: "Equity-based, does not trail (Hard Breach)"},
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)"},
     { label: "Leverage", value: "1:50"},
@@ -17,8 +17,8 @@ function TwoStepsProCrad() {
 
   const secondphase = [
     { label: "Profit Target", value: "5%", description: "5% target of initial balance" },
-    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
-    { label: "Max Drawdown", value: "7%", description: "Equity-based, does not trail (Hard Breach)"},
+    { label: "Daily Loss Limit", value: "5%", description: "Based on the greater of end of day balance or EOD equity" },
+    { label: "Max Drawdown", value: "7%", description: "Static based  to the inital balance(does not trail)"},
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50"},
     // { label: "Max Time", value: "-", description: "Max Time requirements" },
@@ -29,8 +29,8 @@ function TwoStepsProCrad() {
 
   const fundedSteps = [
     { label: "Profit Target", value: "-", description: "Funded account has no profit limit" },
-    { label: "Daily Loss Limit", value: "5%", description: "Equity-based on current day balance" },
-    { label: "Max Drawdown", value: "7%", description: "Equity-based, does not trail (Hard Breach)"},
+    { label: "Daily Loss Limit", value: "5%", description: "Based on the greater of end of day balance or EOD equity" },
+    { label: "Max Drawdown", value: "7%", description: "Static based  to the inital balance(does not trail)"},
     // { label: "Inactivity Period", value: "30 Days", description: "Must place trade (Hard Breach)" },
     { label: "Leverage", value: "1:50"},
     // { label: "Max Time", value: "-", description: "Max Time requirements" },
