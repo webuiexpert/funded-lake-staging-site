@@ -33,7 +33,7 @@ function FutureStandardProPriceTab() {
                        
                         <TabPanel className="50K-tab">
                             <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'} />
-                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40"
+                            <PriceTableBtns // goalDiscount="40%" // couponCode="GOAL40"
                                 hideHeading={true}
                                 getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=298"
                             />

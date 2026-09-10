@@ -17,11 +17,11 @@ function TopBar() {
 
   <div className="flex items-center gap-4 justify-center">
     <p className="text-[14px] md:text-xl lg:text-xl font-medium">
-      Use code <strong>FL20</strong> for 20% OFF ALL programs
+      Use code <strong>BIG30</strong> for 30% OFF ALL programs $25k and above
     </p>
 
-    <div onClick={() => navigator.clipboard.writeText("FL20")}>
-      <CopyCouponButton couponCode="FL20" />
+    <div onClick={() => navigator.clipboard.writeText("BIG30")}>
+      <CopyCouponButton couponCode="BIG30" />
     </div>
   </div>
 
