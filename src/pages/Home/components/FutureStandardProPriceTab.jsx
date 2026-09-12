@@ -19,7 +19,7 @@ function FutureStandardProPriceTab() {
                 </TabList>
                 <TabPanel className="standard-tab mt-10">
                     <Tabs>
-                         <TabList>
+                        <TabList>
                             <Tab className="50k my-2 mx-2 lg:px-6 md:px-2 md:py-5 px-4 hover:bg-[#032070] duration-200 hover:text-white rounded-full">
                                 <div>50K <span className="ml-5 inline-block">$119/Month</span></div>
                             </Tab>
@@ -30,25 +30,28 @@ function FutureStandardProPriceTab() {
                                 <div>150K <span className="ml-5 inline-block">$199/Month</span></div>
                             </Tab>
                         </TabList>
-                       
+
                         <TabPanel className="50K-tab">
                             <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'} />
-                            <PriceTableBtns // goalDiscount="40%" // couponCode="GOAL40"
+                            <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="40%" couponCode="GOAL40"
                                 hideHeading={true}
                                 getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=298"
                             />
                         </TabPanel>
                         <TabPanel className="100K-tab">
-                            <HundredPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'}/>
-                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40"
-                            hideHeading={true}
-                            getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=299" />
+                            <HundredPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'} />
+                            <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="40%" couponCode="GOAL40"
+                                hideHeading={true}
+                                getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=299" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
-                            <OneFiftyPriceCard evaluationActivateFee={'None'}  fundedActivateFee={'$120'}/>
-                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40"
-                            hideHeading={true}
-                            getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=300" />
+                            <OneFiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'$120'} />
+                            <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="40%" couponCode="GOAL40"
+                                hideHeading={true}
+                                getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=300" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
@@ -68,15 +71,18 @@ function FutureStandardProPriceTab() {
                         </TabList>
                         <TabPanel className="50K-tab">
                             <FiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
-                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40"  hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=304" />
+                            <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="40%" couponCode="GOAL40" hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=304" />
                         </TabPanel>
                         <TabPanel className="100K-tab">
                             <HundredPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
-                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=305" />
+                            <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="40%" couponCode="GOAL40" hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=305" />
                         </TabPanel>
                         <TabPanel className="150K-tab">
                             <OneFiftyPriceCard evaluationActivateFee={'None'} fundedActivateFee={'None'} />
-                            <PriceTableBtns goalDiscount="40%" couponCode="GOAL40" hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=306" />
+                            <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="40%" couponCode="GOAL40" hideHeading={true} getFundedLink="https://fundedlakedashboard.propaccount.com/challenges?planid=306" />
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
