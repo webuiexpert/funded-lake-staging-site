@@ -99,11 +99,11 @@ function PriceTab() {
                     </TabList>
                     <TabPanel className="5K">
                       <OneStepPriceCard />
-                      <PriceTableBtns goalDiscount="20%" couponCode="FL20" oldAmount="$35"  newAmount="28$" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
+                      <PriceTableBtns goalDiscount="20%" couponCode="FL20" newAmount="$28" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
                     </TabPanel>
                     <TabPanel className="10K">
                       <OneStepPriceCard />
-                      <PriceTableBtns goalDiscount="20%" couponCode="FL20" oldAmount="$75" a newAmount="60$" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
+                      <PriceTableBtns goalDiscount="20%" couponCode="FL20" newAmount="$60" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
                     </TabPanel>
                     <TabPanel className="25K">
                       <OneStepPriceCard />
