@@ -99,11 +99,13 @@ function PriceTab() {
                     </TabList>
                     <TabPanel className="5K">
                       <OneStepPriceCard />
-                      <PriceTableBtns goalDiscount="20%" couponCode="FL20" newAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
+                      <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="20%" couponCode="FL20" newAmount="$35" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
                     </TabPanel>
                     <TabPanel className="10K">
                       <OneStepPriceCard />
-                      <PriceTableBtns goalDiscount="20%" couponCode="FL20" newAmount="$75" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
+                      <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="20%" couponCode="FL20" newAmount="$75" accountAmt="10K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=99" />
                     </TabPanel>
                     <TabPanel className="25K">
                       <OneStepPriceCard />
@@ -156,11 +158,13 @@ function PriceTab() {
                     </TabList>
                     <TabPanel className="5K">
                       <InstantPriceCard />
-                      <PriceTableBtns goalDiscount="20%" couponCode="FL20"  couponCode="FL20" oldAmount="$200" newAmount="160$" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=180" />
+                      <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="20%" couponCode="FL20" oldAmount="$200" newAmount="160$" accountAmt="5K" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=180" />
                     </TabPanel>
                     <TabPanel className="10K">
                       <InstantPriceCard />
-                      <PriceTableBtns goalDiscount="20%" couponCode="FL20"  oldAmount="$400" accountAmt="10K" newAmount="320$" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=181" />
+                      <PriceTableBtns offerDiscountBtn={true}
+                                limitedTime={true} goalDiscount="20%" couponCode="FL20"  oldAmount="$400" accountAmt="10K" newAmount="320$" getFundedLink="https://fundedlakedashboard.propaccount.com/en/challenges?planid=181" />
                     </TabPanel>
                     <TabPanel className="25K">
                       <InstantPriceCard />
